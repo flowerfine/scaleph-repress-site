@@ -12,9 +12,6 @@ hero:
     - theme: alt
       text: 概览
       link: /guide/overview/
-    - theme: alt
-      text: Github
-      link: https://github.com/flowerfine/scaleph
   image:
     src: /scaleph-icon.png
     alt: Scaleph Logo

@@ -16,7 +16,7 @@ export default defineConfig({
     lastUpdated: true,
     socialLinks: [
       { icon: 'github', mode: 'link', content: 'https://github.com/flowerfine/scaleph' },
-      { icon: 'wechat', mode: 'text', content: 'kalencaya' },
+      { icon: 'wechat', mode: 'img', content: '/wechat.jpg' },
     ],
     locales: [
       {
