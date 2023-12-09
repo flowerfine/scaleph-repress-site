@@ -1,9 +1,4 @@
----
-id: software
-title: 软件设计
-slug: software
-order: 3
----
+# 软件设计
 
 设计哲学
 

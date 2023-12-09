@@ -1,9 +1,4 @@
----
-id: test
-title: 测试
-slug: test
-order: 1
----
+# 测试
 
 测试文章总结
 ## 单元测试

@@ -1,9 +1,4 @@
----
-id: json-diff
-title: Json Diff&Merge
-slug: json-diff
-order: 2
----
+# Json Diff&Merge
 
 Json 的 diff 和 merge 功能实现
 

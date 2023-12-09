@@ -1,9 +1,4 @@
----
-id: spring
-title: Spring&Spring-Boot
-slug: spring
-order: 1
----
+# Spring&Spring-Boot
 
 # Spring
 
