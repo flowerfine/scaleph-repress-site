@@ -15,7 +15,7 @@
 npm install
 ```
 
-## Local Development
+## Development
 
 ```console
 npm run dev
@@ -30,6 +30,14 @@ npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Preview
+
+```console
+npm run preview
+```
+
+This command bootstrap static site preview service.
 
 ## Deployment
 
