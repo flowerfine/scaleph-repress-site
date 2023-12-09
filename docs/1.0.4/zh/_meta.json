@@ -1,26 +1,32 @@
 [
   {
-    "text": "快速上手",
-    "link": "/guide/overview"
+    "text": "nav.quick-start",
+    "link": "/guide/introduction",
+    "activeMatch": "/guide/"
   },
   {
-    "text": "功能设计",
-    "link": "/design/design"
+    "text": "nav.design",
+    "link": "/design/design",
+    "activeMatch": "/design/"
   },
   {
-    "text": "路线图",
-    "link": "/roadmap/roadmap"
+    "text": "nav.roadmap",
+    "link": "/roadmap/roadmap",
+    "activeMatch": "/roadmap/"
   },
   {
-    "text": "参与贡献",
-    "link": "/contribute/develop"
+    "text": "nav.contribute",
+    "link": "/contribute/",
+    "activeMatch": "/contribute/"
   },
   {
-    "text": "博客",
-    "link": "/blog/overview"
+    "text": "nav.blog",
+    "link": "/blog/overview",
+    "activeMatch": "/blog/"
   },
   {
-    "text": "FAQ",
-    "link": "/faq/faq"
+    "text": "nav.faq",
+    "link": "/faq/faq",
+    "activeMatch": "/faq/"
   }
 ]

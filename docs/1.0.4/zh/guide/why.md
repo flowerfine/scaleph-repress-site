@@ -1,3 +1,5 @@
+# 项目初衷
+
 `scaleph` 始于 2022 年初，彼时 SeaTunnel 刚在 2021 年 11 月份进入 apache 孵化器进行孵化，作为项目早期的关注者和参与者，非常喜欢 SeaTunnel 的设计理念和成果，于是决定为 SeaTunnel 开发一个 web 管理系统，实现 SeaTunnel 任务的创建、提交、停止等功能，类似 Datax 和 Datax-web 之类的组合。
 
 - 那么如何去创建 SeaTunnel 任务呢？做个拖拉拽的吧！

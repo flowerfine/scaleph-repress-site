@@ -1,32 +1,32 @@
 [
   {
     "type": "file",
-    "name": "overview",
-    "label": "overview"
+    "name": "introduction",
+    "label": "nav.quick-start.introduction"
   },
   {
     "type": "file",
     "name": "why",
-    "label": "why"
+    "label": "nav.quick-start.why"
   },
   {
     "type": "dir",
     "name": "kubernetes",
-    "label": "kubernetes"
+    "label": "nav.quick-start.kubernetes"
   },
   {
     "type": "dir",
     "name": "install",
-    "label": "install"
+    "label": "nav.quick-start.install"
   },
   {
     "type": "file",
     "name": "compile",
-    "label": "compile"
+    "label": "nav.quick-start.compile"
   },
   {
     "type": "dir",
     "name": "quick-start",
-    "label": "quick-start"
+    "label": "nav.quick-start.quick-start"
   }
 ]

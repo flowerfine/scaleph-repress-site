@@ -1,6 +1,50 @@
 {
-  "overview": {
-    "zh": "概览",
-    "en": "Overview"
+  "nav.quick-start": {
+    "zh": "快速开始",
+    "en": "Quick Start"
+  },
+  "nav.quick-start.introduction": {
+    "zh": "项目简介",
+    "en": "introduction"
+  },
+  "nav.quick-start.why": {
+    "zh": "项目初衷",
+    "en": "Why"
+  },
+  "nav.quick-start.kubernetes": {
+    "zh": "Kubernetes",
+    "en": "Kubernetes"
+  },
+  "nav.quick-start.install": {
+    "zh": "安装",
+    "en": "Install"
+  },
+  "nav.quick-start.compile": {
+    "zh": "编译",
+    "en": "Compile"
+  },
+  "nav.quick-start.quick-start": {
+    "zh": "快速开始",
+    "en": "Quick Start"
+  },
+  "nav.design": {
+    "zh": "功能设计",
+    "en": "Design"
+  },
+  "nav.roadmap": {
+    "zh": "路线图",
+    "en": "Roadmap"
+  },
+  "nav.contribute": {
+    "zh": "参与贡献",
+    "en": "How To Contribute"
+  },
+  "nav.blog": {
+    "zh": "博客",
+    "en": "Blog"
+  },
+  "nav.faq": {
+    "zh": "FAQ",
+    "en": "FAQ"
   }
 }

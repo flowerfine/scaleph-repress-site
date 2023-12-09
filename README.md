@@ -3,7 +3,7 @@
 
 # Scaleph Docs
 
-✨ Powered by [Repress](https://rspress.dev/).
+✨ Powered by [Rspress](https://rspress.dev/).
 
 [![CI](https://github.com/flowerfine/scaleph-repress-site/actions/workflows/ci.yml/badge.svg)](https://github.com/flowerfine/scaleph-repress-site/actions/workflows/ci.yml)
 
