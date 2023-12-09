@@ -27,6 +27,25 @@
     "zh": "快速开始",
     "en": "Quick Start"
   },
+
+  "nav.quick-start.quick-start.initialize": {
+    "zh": "初始化系统",
+    "en": "Initialize System"
+  },
+  "nav.quick-start.quick-start.flink_cluster": {
+    "zh": "Flink 集群",
+    "en": "Flink Cluster"
+  },
+  "nav.quick-start.quick-start.job_seatunnel": {
+    "zh": "SeaTunnel On Flink 任务",
+    "en": "SeaTunnel On Flink Job"
+  },
+  "nav.quick-start.quick-start.job_jar": {
+    "zh": "Flink Jar 任务",
+    "en": "Flink Jar Job"
+  },
+
+
   "nav.design": {
     "zh": "功能设计",
     "en": "Design"

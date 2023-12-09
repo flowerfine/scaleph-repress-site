@@ -2,21 +2,21 @@
   {
     "type": "file",
     "name": "initialize",
-    "label": "initialize"
+    "label": "nav.quick-start.quick-start.initialize"
   },
   {
     "type": "file",
     "name": "flink_cluster",
-    "label": "flink cluster"
-  },
-  {
-    "type": "file",
-    "name": "job_jar",
-    "label": "jar job"
+    "label": "nav.quick-start.quick-start.flink_cluster"
   },
   {
     "type": "file",
     "name": "job_seatunnel",
-    "label": "seatunnel job"
+    "label": "nav.quick-start.quick-start.job_seatunnel"
+  },
+  {
+    "type": "file",
+    "name": "job_jar",
+    "label": "nav.quick-start.quick-start.job_jar"
   }
 ]
