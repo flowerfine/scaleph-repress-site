@@ -1,9 +1,4 @@
----
-id: initialize
-title: 初始化系统
-slug: initialize
-order: 1
----
+# 系统初始化
 
 `scaleph` 部署成功后，通过 `sys_admin/123456` 登录 [http://localhost](http://localhost) 后，系统维护者或者管理员需要先行对系统进行初始化，填充用户进行数据开发的必须配置和文件。
 

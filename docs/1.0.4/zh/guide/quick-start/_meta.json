@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "initialize",
+    "label": "initialize"
+  },
+  {
+    "type": "file",
+    "name": "flink_cluster",
+    "label": "flink cluster"
+  },
+  {
+    "type": "file",
+    "name": "job_jar",
+    "label": "jar job"
+  },
+  {
+    "type": "file",
+    "name": "job_seatunnel",
+    "label": "seatunnel job"
+  }
+]

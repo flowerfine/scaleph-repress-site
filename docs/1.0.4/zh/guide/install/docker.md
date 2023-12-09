@@ -1,9 +1,4 @@
----
-id: docker
-title: Docker
-slug: docker
-order: 1
----
+# Docker
 
 `scaleph` 产出为镜像，部署方式以 docker 为主。镜像发布在 github packages 中，网络不畅情况下，可通过：
 

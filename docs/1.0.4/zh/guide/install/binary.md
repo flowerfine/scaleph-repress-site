@@ -1,9 +1,4 @@
----
-id: binary
-title: 安装包
-slug: binary
-order: 2
----
+# 安装包
 
 从 [github](https://github.com/flowerfine/scaleph/releases) 获取安装包，或者[自行编译](./compile)。
 

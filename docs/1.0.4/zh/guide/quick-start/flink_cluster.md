@@ -1,10 +1,3 @@
----
-id: flink_cluster
-title: Flink 集群
-slug: flink_cluster
-order: 2
----
-
 Flink 支持与 YARN、Kubernetes 资源调度系统集成，实现资源的动态申请和释放，适应不同规模的数据任务。
 
 另外，Flink 作为有状态的流式计算引擎，状态存储、checkpoint 配置会直接影响数据的准确性，[High Availability](https://nightlies.apache.org/flink/flink-docs-release-1.15/docs/deployment/config/#high-availability) 和 [Fault Tolerance](https://nightlies.apache.org/flink/flink-docs-release-1.15/docs/deployment/config/#fault-tolerance) 配置会在异常出现时有足够的弹性容错，其余如日志、监控等可以让开发者了解任务运行细节，便于排查问题。

@@ -1,7 +1,7 @@
 <div align="center">
 
 
-# Scaleph Documentation Website
+# Scaleph Docs
 
 ✨ Powered by [Repress](https://rspress.dev/).
 

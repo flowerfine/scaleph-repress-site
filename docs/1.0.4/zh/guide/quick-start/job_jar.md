@@ -1,10 +1,3 @@
----
-id: job_jar
-title: Flink Jar 任务
-slug: job_jar
-order: 4
----
-
 `scaleph` 初衷是为 SeaTunnel 提供 web 后台系统，辅助用户创建、提交和管理 SeaTunnel 任务，类似 Datax-web 与 Datax。在支持 Flink 引擎的过程中，`scaleph` 贡献者认为项目中涉及了大量与 Flink 管理相关的功能，涉及 SeaTunnel 的部分反而在前端体现更多，`scaleph` 可以在 Flink 管理功能的基础上，提供更多的功能，如 Jar 或者 SQL 任务管理。
 
 支持 Flink 任务管理也将成为 `scaleph` 的一个新的 Feature。

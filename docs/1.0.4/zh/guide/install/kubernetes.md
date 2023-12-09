@@ -1,8 +1,3 @@
----
-id: kubernetes
-title: Kubernetes
-slug: kubernetes
-order: 3
----
+# Kubernetes
 
 Kubernetes 部署，敬请期待
