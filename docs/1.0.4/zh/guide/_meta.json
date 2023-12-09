@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "overview",
+    "label": "overview"
+  },
+  {
+    "type": "file",
+    "name": "why",
+    "label": "why"
+  },
+  {
+    "type": "dir",
+    "name": "kubernetes",
+    "label": "kubernetes"
+  },
+  {
+    "type": "dir",
+    "name": "install",
+    "label": "install"
+  },
+  {
+    "type": "file",
+    "name": "compile",
+    "label": "compile"
+  },
+  {
+    "type": "dir",
+    "name": "quick-start",
+    "label": "quick-start"
+  }
+]
