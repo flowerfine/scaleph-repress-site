@@ -12,13 +12,13 @@
 ## Installation
 
 ```console
-npm install
+pnpm install
 ```
 
 ## Development
 
 ```console
-npm run dev
+pnpm run dev
 ```
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
@@ -26,15 +26,15 @@ This command starts a local development server and open up a browser window. Mos
 ## Build
 
 ```console
-npm run build
+pnpm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content and can be served using any static contents hosting service.
 
 ## Preview
 
 ```console
-npm run preview
+pnpm run preview
 ```
 
 This command bootstrap static site preview service.
