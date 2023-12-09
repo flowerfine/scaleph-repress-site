@@ -3,8 +3,8 @@ pageType: home
 
 hero:
   name: Scaleph
-  text: Open data platform based on Flink and Kubernetes, supports web-ui click-and-drop data integration with SeaTunnel backended by Flink engine, flink online sql development backended by Flink Sql Gateway, also flink jar job, where flink job runs on Kubernetes managed by Flink Kubernetes Operator.
-  tagline: Scaleph tagline
+  text: 开放数据平台，具备 Flink 和 SeaTunnel 任务管理能力
+  tagline: Flink, SeaTunnel, Kubernetes
   actions:
     - theme: brand
       text: Quick Start
@@ -13,7 +13,7 @@ hero:
       text: Github
       link: https://github.com/web-infra-dev/rspress
   image:
-    src: /rspress-icon.png
+    src: /scaleph-icon.png
     alt: Scaleph Logo
 features:
   - title: Blazing fast build speed
