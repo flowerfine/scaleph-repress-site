@@ -1,0 +1,32 @@
+[
+  {
+    "text": "快速上手",
+    "link": "/guide/",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "功能设计",
+    "link": "/design/",
+    "activeMatch": "/design/"
+  },
+  {
+    "text": "路线图",
+    "link": "/roadmap/",
+    "activeMatch": "/roadmap/"
+  },
+  {
+    "text": "参与贡献",
+    "link": "/contribute/",
+    "activeMatch": "/contribute/"
+  },
+  {
+    "text": "博客",
+    "link": "/blog/",
+    "activeMatch": "/blog/"
+  },
+  {
+    "text": "FAQ",
+    "link": "/fqg/",
+    "activeMatch": "/fqg/"
+  }
+]

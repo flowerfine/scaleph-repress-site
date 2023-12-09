@@ -7,11 +7,14 @@ hero:
   tagline: Flink, SeaTunnel, Kubernetes
   actions:
     - theme: brand
-      text: Quick Start
-      link: /guide/
+      text: 快速开始
+      link: /guide/quick-start/initialize/
+    - theme: alt
+      text: 概览
+      link: /guide/overview/
     - theme: alt
       text: Github
-      link: https://github.com/web-infra-dev/rspress
+      link: https://github.com/flowerfine/scaleph
   image:
     src: /scaleph-icon.png
     alt: Scaleph Logo
