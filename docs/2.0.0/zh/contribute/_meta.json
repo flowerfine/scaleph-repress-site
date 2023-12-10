@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "概览"
+  },
+  {
+    "type": "file",
+    "name": "develop",
+    "label": "开发环境"
+  },
+  {
+    "type": "file",
+    "name": "sourcecode",
+    "label": "项目源码"
+  },
+  {
+    "type": "file",
+    "name": "docker",
+    "label": "Docker"
+  },
+  {
+    "type": "file",
+    "name": "cicd",
+    "label": "CI/CD"
+  },
+  {
+    "type": "file",
+    "name": "contribute",
+    "label": "如何贡献"
+  }
+]

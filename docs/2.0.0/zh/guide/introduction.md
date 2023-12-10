@@ -2,6 +2,16 @@
 
 `scalelph` 是一个基于 Flink 和 Kubernetes 打造的开放数据平台，具备 Flink 和 SeaTunnel 任务管理能力。
 
+## 新功能预告
+
+_网站文档已经开始基于将要发布的 `2.0.0` 版本进行调整，进行发版准备，相比上一个 `1.0.4` 发版会有极大不同。_
+
+距离 `1.0.4` 发布以来，`scaleph` 开始筹划 Flink 任务管理底层实现由 [flinkful](https://github.com/flowerfine/flinkful) 向 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 迁移，新功能将在 `2023-07` 期间以 `2.0.0` 版本发布，同时还有非常多的核心特性：
+
+- SQL 在线开发。基于 [SQL Gateway](https://nightlies.apache.org/flink/flink-docs-release-1.17/docs/dev/table/sql-gateway/overview/) 提供 Flink SQL 任务在线开发、调试。
+- SeaTunnel 任务拖拉拽开发体验。基于 [SeaTunnel](https://seatunnel.apache.org/) 提供拖拉拽的在线数据集成任务开发体验，运行在 Flink 引擎上。
+- Flink 任务管理。基于 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 实现云原生 Flink 任务管理，统一管理 Jar、SQL 和 SeaTunnel 任务运行。
+
 ## 企业级后台管理系统
 
 在大数据领域中，开源项目如雨后春笋，层出不穷，计算引擎、存储引擎、查询引擎、数据湖，百花齐放，相关技术演进日新月异，让人应接不暇，但是总体呈现如下趋势：

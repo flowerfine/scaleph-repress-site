@@ -1,0 +1,32 @@
+[
+  {
+    "text": "nav.quick-start",
+    "link": "/guide/introduction",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "nav.design",
+    "link": "/design/design",
+    "activeMatch": "/design/"
+  },
+  {
+    "text": "nav.roadmap",
+    "link": "/roadmap/",
+    "activeMatch": "/roadmap/"
+  },
+  {
+    "text": "nav.contribute",
+    "link": "/contribute/",
+    "activeMatch": "/contribute/"
+  },
+  {
+    "text": "nav.blog",
+    "link": "/blog/overview",
+    "activeMatch": "/blog/"
+  },
+  {
+    "text": "nav.faq",
+    "link": "/faq/faq",
+    "activeMatch": "/faq/"
+  }
+]
