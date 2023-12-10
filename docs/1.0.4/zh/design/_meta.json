@@ -1,0 +1,27 @@
+[
+  {
+    "type": "file",
+    "name": "design",
+    "label": "nav.design.design"
+  },
+  {
+    "type": "file",
+    "name": "flink-job",
+    "label": "nav.design.flink-job"
+  },
+  {
+    "type": "dir",
+    "name": "storage",
+    "label": "nav.design.storage"
+  },
+  {
+    "type": "dir",
+    "name": "kubernetes",
+    "label": "nav.design.kubernetes"
+  },
+  {
+    "type": "dir",
+    "name": "dataservice",
+    "label": "nav.design.dataservice"
+  }
+]

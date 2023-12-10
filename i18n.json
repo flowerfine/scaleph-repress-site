@@ -27,7 +27,6 @@
     "zh": "快速开始",
     "en": "Quick Start"
   },
-
   "nav.quick-start.quick-start.initialize": {
     "zh": "初始化系统",
     "en": "Initialize System"
@@ -44,13 +43,39 @@
     "zh": "Flink Jar 任务",
     "en": "Flink Jar Job"
   },
-
-
   "nav.design": {
     "zh": "功能设计",
     "en": "Design"
   },
+  "nav.design.design": {
+    "zh": "功能设计",
+    "en": "Design"
+  },
+  "nav.design.flink-job": {
+    "zh": "Flink 任务管理",
+    "en": "Flink Job Manage"
+  },
+  "nav.design.storage": {
+    "zh": "存储功能",
+    "en": "Storage"
+  },
+  "nav.design.kubernetes": {
+    "zh": "Flink On Kubernetes",
+    "en": "Flink On Kubernetes"
+  },
+  "nav.design.dataservice": {
+    "zh": "数据服务",
+    "en": "Data Service"
+  },
   "nav.roadmap": {
+    "zh": "路线图",
+    "en": "Roadmap"
+  },
+  "nav.roadmap.overview": {
+    "zh": "概览",
+    "en": "Overview"
+  },
+  "nav.roadmap.roadmap": {
     "zh": "路线图",
     "en": "Roadmap"
   },
