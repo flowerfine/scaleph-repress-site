@@ -2,31 +2,31 @@
   {
     "type": "file",
     "name": "index",
-    "label": "概览"
+    "label": "nav.contribute.index"
   },
   {
     "type": "file",
     "name": "develop",
-    "label": "开发环境"
+    "label": "nav.contribute.develop"
   },
   {
     "type": "file",
     "name": "sourcecode",
-    "label": "项目源码"
+    "label": "nav.contribute.sourcecode"
   },
   {
     "type": "file",
     "name": "docker",
-    "label": "Docker"
+    "label": "nav.contribute.docker"
   },
   {
     "type": "file",
     "name": "cicd",
-    "label": "CI/CD"
+    "label": "nav.contribute.cicd"
   },
   {
     "type": "file",
     "name": "contribute",
-    "label": "如何贡献"
+    "label": "nav.contribute.contribute"
   }
 ]

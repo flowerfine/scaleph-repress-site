@@ -1,8 +1,8 @@
 [
   {
     "type": "file",
-    "name": "overview",
-    "label": "nav.blog.overview"
+    "name": "index",
+    "label": "nav.blog.index"
   },
   {
     "type": "dir",

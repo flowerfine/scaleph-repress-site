@@ -21,7 +21,7 @@
   },
   {
     "text": "nav.blog",
-    "link": "/blog/overview",
+    "link": "/blog/",
     "activeMatch": "/blog/"
   },
   {

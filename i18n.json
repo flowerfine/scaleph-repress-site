@@ -83,11 +83,35 @@
     "zh": "参与贡献",
     "en": "How To Contribute"
   },
+  "nav.contribute.index": {
+    "zh": "概览",
+    "en": "Overview"
+  },
+  "nav.contribute.develop": {
+    "zh": "开发环境",
+    "en": "Develop"
+  },
+  "nav.contribute.sourcecode": {
+    "zh": "项目源码",
+    "en": "SourceCode"
+  },
+  "nav.contribute.docker": {
+    "zh": "Docker",
+    "en": "Docker"
+  },
+  "nav.contribute.cicd": {
+    "zh": "CI/CD",
+    "en": "CI/CD"
+  },
+  "nav.contribute.contribute": {
+    "zh": "如何贡献",
+    "en": "How To Contribute"
+  },
   "nav.blog": {
     "zh": "博客",
     "en": "Blog"
   },
-  "nav.blog.overview": {
+  "nav.blog.index": {
     "zh": "概览",
     "en": "Overview"
   },
