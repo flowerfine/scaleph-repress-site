@@ -1,8 +1,8 @@
 [
   {
     "type": "file",
-    "name": "introduction",
-    "label": "nav.quick-start.introduction"
+    "name": "index",
+    "label": "nav.quick-start.index"
   },
   {
     "type": "file",

@@ -1,8 +1,8 @@
 [
   {
     "type": "file",
-    "name": "design",
-    "label": "nav.design.design"
+    "name": "index",
+    "label": "nav.design.index"
   },
   {
     "type": "dir",

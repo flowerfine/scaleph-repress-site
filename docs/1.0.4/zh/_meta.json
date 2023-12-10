@@ -1,12 +1,12 @@
 [
   {
     "text": "nav.quick-start",
-    "link": "/guide/introduction",
+    "link": "/guide/",
     "activeMatch": "/guide/"
   },
   {
     "text": "nav.design",
-    "link": "/design/design",
+    "link": "/design/",
     "activeMatch": "/design/"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "text": "nav.faq",
-    "link": "/faq/faq",
+    "link": "/faq/",
     "activeMatch": "/faq/"
   }
 ]
