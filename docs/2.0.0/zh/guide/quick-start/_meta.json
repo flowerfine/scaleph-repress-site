@@ -1,11 +1,6 @@
 [
   {
     "type": "file",
-    "name": "prepare",
-    "label": "nav.quick-start.quick-start.prepare"
-  },
-  {
-    "type": "file",
     "name": "initialize",
     "label": "nav.quick-start.quick-start.initialize"
   },

@@ -11,6 +11,11 @@
   },
   {
     "type": "dir",
+    "name": "prepare",
+    "label": "nav.quick-start.prepare"
+  },
+  {
+    "type": "dir",
     "name": "kubernetes",
     "label": "nav.quick-start.kubernetes"
   },

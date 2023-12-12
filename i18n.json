@@ -11,6 +11,10 @@
     "zh": "项目初衷",
     "en": "Why"
   },
+  "nav.quick-start.prepare" : {
+    "zh": "准备工作",
+    "en": "Prepare"
+  },
   "nav.quick-start.kubernetes": {
     "zh": "Kubernetes",
     "en": "Kubernetes"
@@ -26,10 +30,6 @@
   "nav.quick-start.quick-start": {
     "zh": "快速开始",
     "en": "Quick Start"
-  },
-  "nav.quick-start.quick-start.prepare": {
-    "zh": "前置准备",
-    "en": "Prepare"
   },
   "nav.quick-start.quick-start.initialize": {
     "zh": "初始化系统",
