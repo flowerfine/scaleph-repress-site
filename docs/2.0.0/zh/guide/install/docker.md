@@ -36,4 +36,4 @@ docker compose up -d
 docker compose down
 ```
 
-在所有容器正常启动后，用户即可访问 [http://localhost](http://localhost/)，用户名密码为 `sys_admin/123456`。
+在所有容器正常启动后，用户即可访问 [http://localhost:8096](http://localhost:8096/)，用户名密码为 `sys_admin/123456`。
