@@ -14,11 +14,11 @@
 
 从 `资源` -> `Cluster Credential` -> `新增`进入上传页面：
 
-![schedule_system_job](./images/initialize/cluster_credential_upload.png)
+![cluster_credential_upload](./images/initialize/cluster_credential_upload.png)
 
 上传成功：
 
-![schedule_system_job](./images/initialize/cluster_credential_list.png)
+![cluster_credential_list](./images/initialize/cluster_credential_list.png)
 
 ## 启动调度
 

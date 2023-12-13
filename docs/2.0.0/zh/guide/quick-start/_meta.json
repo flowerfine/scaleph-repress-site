@@ -6,6 +6,11 @@
   },
   {
     "type": "file",
+    "name": "flink-kubernetes",
+    "label": "nav.quick-start.quick-start.flink-kubernetes"
+  },
+  {
+    "type": "file",
     "name": "flink_cluster",
     "label": "nav.quick-start.quick-start.flink_cluster"
   },

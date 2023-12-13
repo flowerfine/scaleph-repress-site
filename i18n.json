@@ -35,6 +35,10 @@
     "zh": "初始化系统",
     "en": "Initialize System"
   },
+  "nav.quick-start.quick-start.flink-kubernetes": {
+    "zh": "Flink Kubernetes",
+    "en": "Flink Kubernetes"
+  },
   "nav.quick-start.quick-start.flink_cluster": {
     "zh": "Flink 集群",
     "en": "Flink Cluster"

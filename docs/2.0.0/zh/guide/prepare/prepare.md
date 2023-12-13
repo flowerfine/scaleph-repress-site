@@ -6,19 +6,6 @@
 * redis
 * minio
 
-Flink 运行所需
-
-* [Native Kubernetes](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/deployment/resource-providers/native_kubernetes/)
-
-Flink Kubernetes Operator 运行所需
-
-* [Quick Start](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.7/docs/try-flink-kubernetes-operator/quick-start/)
-
-SeaTunnel 运行所需
-
-* [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.3/start-v2/locally/deployment#step-3-install-connectors-plugin)
-* [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.3/start-v2/kubernetes/)
-
 拉取镜像
 
 * `scaleph` 系统镜像
