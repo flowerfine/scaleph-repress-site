@@ -1,19 +1,41 @@
-`scaleph` 初衷是为 SeaTunnel 提供 web 后台系统，辅助用户创建、提交和管理 SeaTunnel 任务，类似 Datax-web 与 Datax。在支持 Flink 引擎的过程中，`scaleph` 贡献者认为项目中涉及了大量与 Flink 管理相关的功能，涉及 SeaTunnel 的部分反而在前端体现更多，`scaleph` 可以在 Flink 管理功能的基础上，提供更多的功能，如 Jar 或者 SQL 任务管理。
+# Jar
 
-支持 Flink 任务管理也将成为 `scaleph` 的一个新的 Feature。
+用户使用 Flink DataStream 或 Table API 开发任务，打包成 Jar，`scaleph` 支持用户提交 Jar 包形式的 Flink 任务 。
 
-## Jar Artifact
+## Artifact
 
-首先上传 jar artifact：
+首先上传 Jar artifact，操作路径为 `项目` -> `Artifact 管理` -> `Jar`。以 Flink 提供的 examples 为例：
 
-![job_jar_new](https://github.com/flowerfine/scaleph-website/raw/2a943f478234dadae2748d478ef29d5f81e34a2e/site/images/guide/quick-start/job/jar/job_jar_new.png)
+![job_jar_new_upload_params](images/job/jar/job_jar_new_upload_params.jpg)
 
-填写必要参数：
+上传完成后，效果如下：
 
-![job_jar_new_upload](https://github.com/flowerfine/scaleph-website/raw/2a943f478234dadae2748d478ef29d5f81e34a2e/site/images/guide/quick-start/job/jar/job_jar_new_upload.png)
+![job_jar_new_upload_list](images/job/jar/job_jar_new_upload_list.jpg)
 
 ## 启动任务
 
-`scaleph` 将 Flink 任务启动管理统一到了作业管理功能中，同样支持 Flink Jar 任务提交到 Standalone、YARN 或 Kubernetes。
+用户可以在 `项目` -> `Flink Kubernets` -> `Job` 部署 Jar 类型作业：
 
-![job_create_jar](https://github.com/flowerfine/scaleph-website/raw/2a943f478234dadae2748d478ef29d5f81e34a2e/site/images/guide/quick-start/job/jar/job_create_jar.png)
+![job-jar-deploy-form](images/job/jar/job-jar-deploy-form.jpg)
+
+创建完成后，进入详情页，点击 `Deploy` 启动任务：
+
+![job-detail](images/job/jar/job-detail.jpg)
+
+![job-detail-deploy-1](images/job/jar/job-detail-deploy-1.jpg)
+
+![job-detail-deploy-1](images/job/jar/job-detail-deploy-2.jpg)
+
+部署后，即需要等待 Flink 任务启动。
+
+`scaleph` 添加了一个 init-container 用于加载用户上传的 Jar 到 Flink 容器中，init-container 日志内容如下：
+
+![job-jar-file-fetcher-log](images/job/jar/job-jar-file-fetcher-log.jpg)
+
+在 init-container 容器成功下载 Jar 到 Flink 容器中后，Flink 任务开始启动、运行，用户可通过 `Flink UI` 按钮获取 Flink 任务的 webui：
+
+![job-jar-webui](images/job/jar/job-jar-webui.jpg)
+
+稍后用户可以点击 `Shutdown` 按钮关闭 Flink 任务：
+
+![job-detail-shutdown](images/job/jar/job-detail-shutdown.jpg)
