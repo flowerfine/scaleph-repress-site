@@ -6,7 +6,9 @@
 
 ## SQL 开发
 
-在 `项目` -> `Artifact 管理` -> `SQL` 可以进入 Flink SQL online 编辑器，在线开发 SQL 任务，Flink SQL online 编辑器增加了 Flink [Catalogs](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/dev/table/catalogs/) 支持：
+在 `项目` -> `Artifact 管理` -> `SQL` 可以进入 Flink SQL online 编辑器，在线开发 SQL 任务，Flink SQL online 编辑器增加了 Flink [Catalogs](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/dev/table/catalogs/) 支持。
+
+挨个选中、运行 DDL 语句，创建 catalog、database 和 table：
 
 ![sql-artifact-catalog-1](./images/job/sql/sql-artifact-catalog-1.png)
 
@@ -18,7 +20,7 @@
 
 ![sql-artifact-catalog-4](./images/job/sql/sql-artifact-catalog-4.png)
 
-点击 `运行`，稍等片刻，即可看到执行结果：
+选中 select 语句，点击 `运行`，稍等片刻即可看到执行结果：
 
 ![sql-gateway-result](./images/job/sql/sql-gateway-result.png)
 
