@@ -15,10 +15,6 @@
     "zh": "准备工作",
     "en": "Prepare"
   },
-  "nav.quick-start.kubernetes": {
-    "zh": "Kubernetes",
-    "en": "Kubernetes"
-  },
   "nav.quick-start.install": {
     "zh": "安装",
     "en": "Install"
@@ -123,41 +119,9 @@
     "zh": "概览",
     "en": "Overview"
   },
-  "nav.blog.program-design": {
-    "zh": "程序设计",
-    "en": "Program Design"
-  },
-  "nav.blog.test": {
-    "zh": "测试",
-    "en": "Test"
-  },
-  "nav.blog.container": {
-    "zh": "容器",
-    "en": "Container"
-  },
-  "nav.blog.spring": {
-    "zh": "Spring",
-    "en": "Spring"
-  },
-  "nav.blog.flink": {
-    "zh": "Flink",
-    "en": "Flink"
-  },
-  "nav.blog.data-platform": {
-    "zh": "DevOps",
-    "en": "DevOps"
-  },
-  "nav.blog.devops": {
-    "zh": "数据中台",
-    "en": "Data Platform"
-  },
-  "nav.blog.sql": {
-    "zh": "SQL",
-    "en": "SQL"
-  },
-  "nav.blog.archive": {
-    "zh": "归档文档",
-    "en": "Archive Docs"
+  "nav.blog.kubernetes": {
+    "zh": "Kubernetes",
+    "en": "Kubernetes"
   },
   "nav.faq": {
     "zh": "FAQ",

@@ -16,11 +16,6 @@
   },
   {
     "type": "dir",
-    "name": "kubernetes",
-    "label": "nav.quick-start.kubernetes"
-  },
-  {
-    "type": "dir",
     "name": "install",
     "label": "nav.quick-start.install"
   },
