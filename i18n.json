@@ -39,13 +39,17 @@
     "zh": "Flink 集群",
     "en": "Flink Cluster"
   },
-  "nav.quick-start.quick-start.job_seatunnel": {
-    "zh": "SeaTunnel On Flink 任务",
-    "en": "SeaTunnel On Flink Job"
-  },
   "nav.quick-start.quick-start.job_jar": {
     "zh": "Flink Jar 任务",
     "en": "Flink Jar Job"
+  },
+  "nav.quick-start.quick-start.job_sql": {
+    "zh": "Flink SQL 任务",
+    "en": "Flink SQL Job"
+  },
+  "nav.quick-start.quick-start.job_seatunnel": {
+    "zh": "SeaTunnel On Flink 任务",
+    "en": "SeaTunnel On Flink Job"
   },
   "nav.design": {
     "zh": "功能设计",

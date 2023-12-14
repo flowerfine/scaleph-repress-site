@@ -1,3 +1,5 @@
+# SeaTunnel
+
 `scaleph` 提供了 web 页面拖拉拽的任务创建方式，帮助用户可视化地使用 SeaTunnel 进行数据同步。
 
 ## SeaTunnel 任务创建
