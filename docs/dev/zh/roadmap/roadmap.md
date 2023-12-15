@@ -70,6 +70,10 @@ Flink CDC 在 3.0 推出了实时数据集成功能，不只是 cdc source，也
 * kubernetes-client 使用姿势提升
   * 提交时改为同步等待
   * FlinkDeployment 状态更新。FlinkDeployment 事件监听 vs 轮询
+* web 优化
+  * 简化复杂表单项配置难度
+  * 重新设计详情页
+  * 增加 deployment 和 session-cluster 的修改。
 
 ## 数据源
 
