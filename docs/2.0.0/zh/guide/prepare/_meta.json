@@ -1,0 +1,29 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.quick-start.prepare.index"
+  },
+  {
+    "type": "dir",
+    "name": "kubernetes",
+    "collapsed": true,
+    "label": "nav.quick-start.prepare.kubernetes"
+  },
+  {
+    "type": "dir",
+    "name": "install-dependency",
+    "collapsed": true,
+    "label": "nav.quick-start.prepare.install-dependency"
+  },
+  {
+    "type": "file",
+    "name": "prepare",
+    "label": "nav.quick-start.prepare.prepare"
+  },
+  {
+    "type": "file",
+    "name": "requirement",
+    "label": "nav.quick-start.prepare.requirement"
+  }
+]
