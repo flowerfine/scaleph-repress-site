@@ -1,10 +1,13 @@
 # 前置准备
 
-`scaleph-api` 运行所需：
+`scaleph` 使用容器构建本地开发，通过容器快速构建开发、体验环境，生产环境需要替换。`scaleph-api` 运行所需：
 
-* mysql
-* redis
-* minio
+* mysql。`scaleph` 用到的数据库，sql 语句位于 `tools/docker/mysql/init.d`。
+  * scaleph。主库。包含日志类表，quartz 表，scaleph 核心表。`scaleph-api` 配置了多数据源，生产环境用户为 3 类表配置不同的数据库。
+  * sakura。`scaleph` 实现的Flink catalog 使用的数据库。
+
+* redis。用户权限模块使用
+* minio。`scaleph` 文件上传，Flink 任务运行期间产生的 checkpoints、savepoints 和 ha 数据。`scaleph` 未于 minio 深度绑定，用户可以按需切换 HDFS、OSS 等
 
 拉取镜像
 

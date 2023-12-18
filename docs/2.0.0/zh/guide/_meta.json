@@ -10,6 +10,11 @@
     "label": "nav.quick-start.why"
   },
   {
+    "type": "file",
+    "name": "requirement",
+    "label": "nav.quick-start.requirement"
+  },
+  {
     "type": "dir",
     "name": "prepare",
     "label": "nav.quick-start.prepare"
@@ -19,11 +24,6 @@
     "name": "install",
     "collapsed": true,
     "label": "nav.quick-start.install"
-  },
-  {
-    "type": "file",
-    "name": "compile",
-    "label": "nav.quick-start.compile"
   },
   {
     "type": "dir",

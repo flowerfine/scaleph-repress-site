@@ -4,6 +4,13 @@
 
 `scaleph` 对接 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/)，实现 [Flink](https://flink.apache.org/) 任务以一种云原生方式运行在 [Kubernetes](https://kubernetes.io/) 上。`scaleph` 同时支持 Jar、SQL 和 SeaTunnel（Flink 引擎）3 种类型的任务，满足数据集成和 ETL 2 种业务场景。
 
+`scaleph` 的用户分为 2 类：
+
+* 维护者。需处理安装部署、问题排查、开发升级等
+* 使用者。进行数据工作
+
+`scaleph` 系统维护者需了解一下知识，使用者无需了解。
+
 ## 容器和 Kubernetes
 
 `scaleph` 本身和 `Flink` 都运行在容器和 Kubernetes 中，用户需对容器和 Kubernetes 有所了解，掌握一定技能：

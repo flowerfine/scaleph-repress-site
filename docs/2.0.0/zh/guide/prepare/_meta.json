@@ -15,15 +15,5 @@
     "name": "install-dependency",
     "collapsed": true,
     "label": "nav.quick-start.prepare.install-dependency"
-  },
-  {
-    "type": "file",
-    "name": "prepare",
-    "label": "nav.quick-start.prepare.prepare"
-  },
-  {
-    "type": "file",
-    "name": "requirement",
-    "label": "nav.quick-start.prepare.requirement"
   }
 ]

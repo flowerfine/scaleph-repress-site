@@ -11,6 +11,10 @@
     "zh": "项目初衷",
     "en": "Why"
   },
+  "nav.quick-start.requirement": {
+    "zh": "前置需求",
+    "en": "Requirement"
+  },
   "nav.quick-start.prepare": {
     "zh": "准备工作",
     "en": "Prepare"
@@ -51,19 +55,19 @@
     "zh": "Flink Kubernetes Operator",
     "en": "Flink Kubernetes Operator"
   },
-  "nav.quick-start.prepare.prepare": {
-    "zh": "前置准备",
-    "en": "Prepare"
-  },
-  "nav.quick-start.prepare.requirement": {
-    "zh": "前置需求",
-    "en": "Requirement"
-  },
   "nav.quick-start.install": {
     "zh": "安装",
     "en": "Install"
   },
-  "nav.quick-start.compile": {
+  "nav.quick-start.install.prepare": {
+    "zh": "前置准备",
+    "en": "Prepare"
+  },
+  "nav.quick-start.install.docker": {
+    "zh": "Docker 安装",
+    "en": "Docker Install"
+  },
+  "nav.quick-start.install.compile": {
     "zh": "编译",
     "en": "Compile"
   },

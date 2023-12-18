@@ -1,9 +1,9 @@
 # 说明
 
 * 准备容器和 kubernetes 环境
-* 安装所需依赖
-  * Flink Kubernetes Operator
+  * Docker
+  * Kubernetes
+  * [Helm](https://helm.sh/)。类似 Java 有 maven、gradle，Node 有 npm，Helm 提供在 Kubernetes 部署应用功能。
+* 安装 Kubernetes 所需依赖
   * Nginx Ingress Controller
-  * Doris Operator
-* 学习 Flink 和 Flink Kubernetes Operator
-* 下载镜像。移除，挪到安装环节
+  * Flink Kubernetes Operator
