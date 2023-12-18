@@ -11,7 +11,27 @@
     "zh": "项目初衷",
     "en": "Why"
   },
-  "nav.quick-start.prepare" : {
+  "nav.quick-start.kubernetes": {
+    "zh": "Kubernetes",
+    "en": "Kubernetes"
+  },
+  "nav.quick-start.kubernetes.index": {
+    "zh": "说明",
+    "en": "Introduction"
+  },
+  "nav.quick-start.kubernetes.docker-desktop": {
+    "zh": "Docker Desktop",
+    "en": "Docker Desktop"
+  },
+  "nav.quick-start.kubernetes.minikube": {
+    "zh": "Minikube",
+    "en": "Minikube"
+  },
+  "nav.quick-start.kubernetes.k3s": {
+    "zh": "K3s",
+    "en": "K3s"
+  },
+  "nav.quick-start.prepare": {
     "zh": "准备工作",
     "en": "Prepare"
   },

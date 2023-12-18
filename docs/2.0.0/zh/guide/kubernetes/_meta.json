@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.quick-start.kubernetes.index"
+  },
+  {
+    "type": "file",
+    "name": "docker-desktop",
+    "label": "nav.quick-start.kubernetes.docker-desktop"
+  },
+  {
+    "type": "file",
+    "name": "minikube",
+    "label": "nav.quick-start.kubernetes.minikube"
+  },
+  {
+    "type": "file",
+    "name": "k3s",
+    "label": "nav.quick-start.kubernetes.k3s"
+  }
+]
