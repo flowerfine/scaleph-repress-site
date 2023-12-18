@@ -4,7 +4,7 @@
 
 * [快速入门指南](https://docs.k3s.io/zh/quick-start)。k3s 文档
 * [K3s 中文文档](https://docs.rancher.cn/k3s/)。rancher k3s 文档
-* [腾讯云k3s试用](https://mp.weixin.qq.com/s/d6aoYdrpU2HLnsFwm1Nk_g)
+* [腾讯云k3s试用](https://mp.weixin.qq.com/s/d6aoYdrpU2HLnsFwm1Nk_g)。腾讯云轻量服务器提供了 k3s 模版
 
 ## 部署 server 节点
 
@@ -109,14 +109,14 @@ k3s 提供的相关文档：[集群访问](https://docs.k3s.io/zh/cluster-access
 
 一些云提供商（例如 Linode）将创建以 “localhost” 作为主机名的主机，而其他云提供商可能根本没有设置主机名。这可能会导致域名解析出现问题。你可以使用 `--node-name` 标志或 `K3S_NODE_NAME` 环境变量运行 K3s，这会通过传递节点名称来解决此问题。
 
-多台服务器组成 k3s 集群时，还要注意开放服务器端口，让集群节点互通，参考：[](https://docs.k3s.io/zh/installation/requirements?_highlight=10250#%E7%BD%91%E7%BB%9C)
+多台服务器组成 k3s 集群时，还要注意开放服务器端口，让集群节点互通，参考：[网络](https://docs.k3s.io/zh/installation/requirements?_highlight=10250#%E7%BD%91%E7%BB%9C)
 
 ```shell
 # tcp
-10250,10254,2376,2379,2380,6443,6783,9099,9100,9443,9796
+2379-2380,6443,10250
 
 # udp
-4789,8443,8472,6783-6784
+8472,51820,51821
 ```
 
 ### docker
