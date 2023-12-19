@@ -12,7 +12,7 @@
 1. 环境要求
 
    1. [kubernetes](https://kubernetes.io/)
-   2. [helm](https://helm.sh/docs/intro/quickstart/)
+   2. [helm](https://helm.sh/zh/docs/intro/quickstart/)
 
 2. 安装 flink-kubernetes-operator，参考 [Try the Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.7/docs/try-flink-kubernetes-operator/quick-start/)
 
