@@ -83,10 +83,6 @@
     "zh": "Flink Kubernetes",
     "en": "Flink Kubernetes"
   },
-  "nav.quick-start.quick-start.flink_cluster": {
-    "zh": "Flink 集群",
-    "en": "Flink Cluster"
-  },
   "nav.quick-start.quick-start.job_jar": {
     "zh": "Flink Jar 任务",
     "en": "Flink Jar Job"

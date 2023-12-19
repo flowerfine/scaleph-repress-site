@@ -4,13 +4,13 @@
 
 ## 资源上传
 
-使用 `scaleph` 系统前需上传 `scaleph` 系统运行必需的资源。
+使用 `scaleph` 系统前需上传系统运行必需的资源。
 
 ### Cluster Credential
 
-`scaleph` 支持多集群部署，即用户可以将 Flink 或 SeaTunnel 任务部署至多个 Kubernetes 集群。
+`scaleph` 支持多集群部署，用户可以将 Flink 或 SeaTunnel 任务部署至多个 Kubernetes 集群。
 
-用户需上传 Kubernetes 集群 kubeconfig 文件，kubeconfig 文件，一般位于 `$HOME/.kube/config`。帮助 `scaleph` 连接对应的集群，通过相应的权限验证以提交任务到对应的集群。
+用户需上传 Kubernetes 集群 kubeconfig 文件，kubeconfig 文件一般位于 `$HOME/.kube/config`。通过 kubeconfig， `scaleph` 可以连接对应 Kubernetes 集群，提交任务。
 
 从 `资源` -> `Cluster Credential` -> `新增`进入上传页面：
 

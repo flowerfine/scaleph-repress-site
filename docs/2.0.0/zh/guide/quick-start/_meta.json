@@ -11,11 +11,6 @@
   },
   {
     "type": "file",
-    "name": "flink_cluster",
-    "label": "nav.quick-start.quick-start.flink_cluster"
-  },
-  {
-    "type": "file",
     "name": "job_jar",
     "label": "nav.quick-start.quick-start.job_jar"
   },
