@@ -55,6 +55,10 @@
     "zh": "Flink Kubernetes Operator",
     "en": "Flink Kubernetes Operator"
   },
+  "nav.quick-start.compile": {
+    "zh": "编译",
+    "en": "Compile"
+  },
   "nav.quick-start.install": {
     "zh": "安装",
     "en": "Install"
@@ -79,6 +83,10 @@
     "zh": "初始化系统",
     "en": "Initialize System"
   },
+  "nav.quick-start.quick-start.flink_cluster": {
+    "zh": "Flink 集群",
+    "en": "Flink Cluster"
+  },
   "nav.quick-start.quick-start.flink-kubernetes": {
     "zh": "Flink Kubernetes",
     "en": "Flink Kubernetes"
@@ -94,6 +102,10 @@
   "nav.quick-start.quick-start.job_seatunnel": {
     "zh": "SeaTunnel On Flink 任务",
     "en": "SeaTunnel On Flink Job"
+  },
+  "nav.guide": {
+    "zh": "使用指南",
+    "en": "Guide"
   },
   "nav.design": {
     "zh": "功能设计",

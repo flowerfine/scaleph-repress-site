@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "prepare",
+    "label": "nav.quick-start.install.prepare"
+  },
+  {
+    "type": "file",
+    "name": "docker",
+    "label": "nav.quick-start.install.docker"
+  },
+  {
+    "type": "file",
+    "name": "compile",
+    "label": "nav.quick-start.install.compile"
+  }
+]

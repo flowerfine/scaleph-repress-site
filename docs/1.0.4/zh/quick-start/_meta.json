@@ -1,0 +1,27 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.quick-start.index"
+  },
+  {
+    "type": "file",
+    "name": "why",
+    "label": "nav.quick-start.why"
+  },
+  {
+    "type": "dir",
+    "name": "install",
+    "label": "nav.quick-start.install"
+  },
+  {
+    "type": "file",
+    "name": "compile",
+    "label": "nav.quick-start.compile"
+  },
+  {
+    "type": "dir",
+    "name": "quick-start",
+    "label": "nav.quick-start.quick-start"
+  }
+]

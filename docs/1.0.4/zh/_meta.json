@@ -1,6 +1,11 @@
 [
   {
     "text": "nav.quick-start",
+    "link": "/quick-start/",
+    "activeMatch": "/quick-start/"
+  },
+  {
+    "text": "nav.guide",
     "link": "/guide/",
     "activeMatch": "/guide/"
   },
