@@ -107,6 +107,10 @@
     "zh": "使用指南",
     "en": "Guide"
   },
+  "nav.guide.index": {
+    "zh": "使用指南",
+    "en": "Guide"
+  },
   "nav.design": {
     "zh": "功能设计",
     "en": "Design"
