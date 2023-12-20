@@ -24,6 +24,10 @@
 ```shell
 # clone scaleph 源码
 git clone https://github.com/flowerfine/scaleph.git --depth 1
+# 切换到 2.0.1 分支
+git fetch origin 2.0.1
+cd 2.0.1
+
 cd scaleph/tools/docker/deploy/scaleph
 
 # 下载依赖 && scaleph 组件

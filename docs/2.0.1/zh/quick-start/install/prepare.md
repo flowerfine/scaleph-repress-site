@@ -12,9 +12,9 @@
 拉取镜像
 
 * `scaleph` 系统镜像
-  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-api:2.0.0`
-  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-ui-react:2.0.0`
-  * `docker pull ghcr.io/flowerfine/scaleph/mysql:2.0.0`
+  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-api:2.0.1`
+  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-ui-react:2.0.1`
+  * `docker pull ghcr.io/flowerfine/scaleph/mysql:2.0.1`
 * `scaleph` 依赖镜像
   * `docker pull bitnami/mysql:8.0`
   * `docker pull bitnami/redis:7.0.10`
@@ -22,7 +22,7 @@
 * Flink 和 SeaTunnel 运行镜像
   * Jar
     * `docker pull flink:1.18`
-    * `docker pull ghcr.io/flowerfine/scaleph/scaleph-file-fetcher:2.0.0`
+    * `docker pull ghcr.io/flowerfine/scaleph/scaleph-file-fetcher:2.0.1`
   * SQL
     * `docker pull ghcr.io/flowerfine/scaleph-sql-template:1.18`
     * `docker pull ghcr.io/flowerfine/scaleph-sql-template:1.17`
