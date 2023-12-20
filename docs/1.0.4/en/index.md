@@ -3,15 +3,15 @@ pageType: home
 
 hero:
   name: Scaleph
-  text: 开放数据平台，具备 Flink 和 SeaTunnel 任务管理能力
+  text: Open data platform based on Flink and Kubernetes, support Flink and SeaTunnel
   tagline: Flink, SeaTunnel, Kubernetes
   actions:
     - theme: brand
-      text: 快速开始
-      link: /guide/quick-start/initialize/
+      text: Quick Start
+      link: /1.0.4/en/quick-start/
     - theme: alt
-      text: 概览
-      link: /guide/overview/
+      text: Overview
+      link: /1.0.4/en/quick-start/
   image:
     src: /scaleph-icon.png
     alt: Scaleph Logo
