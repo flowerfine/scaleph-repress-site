@@ -46,7 +46,9 @@ Flink Kubernetes Operator 运行所需
 * [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.3/start-v2/locally/deployment#step-3-install-connectors-plugin)
 * [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.3/start-v2/kubernetes/)
 
+## Doris
 
+* [基于 Doris-Operator 部署](https://doris.apache.org/zh-CN/docs/install/k8s-deploy)
 
 
 

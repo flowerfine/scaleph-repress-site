@@ -7,3 +7,4 @@
 * 安装 Kubernetes 所需依赖
   * Nginx Ingress Controller
   * Flink Kubernetes Operator
+  * Doris Operator

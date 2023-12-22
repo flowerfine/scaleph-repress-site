@@ -17,7 +17,7 @@
 - 数据治理能力。`数据质量`、`数据血缘` 、`数据地图`、`指标系统`和 `数据建模` 等。
 - 数据产品能力。`ad-hoc 查询`、`BI 报表`、数据应用等。
 
-`scaleph` 定位在 admin 后台系统，整合、封装 [Flink](https://flink.apache.org/)、[SeaTunnel](https://seatunnel.apache.org/) 等引擎，连通众多组件，提供开箱即用的一站式数据平台。
+`scaleph` 定位在 admin 后台系统，整合、封装 [Flink](https://flink.apache.org/)、[SeaTunnel](https://seatunnel.apache.org/)、[Doris](https://doris.apache.org/) 等引擎，连通众多组件，提供开箱即用的一站式数据平台。
 
 ## 能力地图
 
@@ -25,16 +25,15 @@
 
 - 项目管理
 
-  - 任务开发。
+  - 数据集成
 
+    - 拖拉拽式的 web 任务开发方式。基于 2.3.3 版本的 [SeaTunnel](https://seatunnel.apache.org/)，支持 Flink 引擎。
+  - 数据开发
+    - Flink 管理。与 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 深度集成，以 operator 模式提供了 Template -> Session-Cluster、Deployment -> Job 的 Flink 任务层级管理。 
     - Jar 任务管理。上传基于 Flink DataStream  和 Table API 开发的 jar 包。
     - SQL 任务管理、在线开发。在线 Flink SQL 编辑器，基于 [SQL Gateway](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/dev/table/sql-gateway/overview/) 提供在线调试、运行。
-    - SeaTunnel 任务管理、拖拉拽在线开发。基于 2.3.3，运行在 Flink 引擎上。
-
-  - 任务运行。
-    - Flink 管理。与 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 深度集成，以 operator 模式提供了 Template -> Session-Cluster、Deployment -> Job 的 Flink 任务层级管理。 
-    - 部署管理。部署 Jar、SQL 和 SeaTunnel 任务。
-  
+  - Doris 集群运维
+    - 集成 [doris-operator](https://github.com/selectdb/doris-operator)，提供 Doris on k8s 部署能力。
 - 数据源管理。对主流数据源提供管理，支持数据源连接信息的统一管理和共享。
 - 资源管理。Kubernetes 集群管理
 - 数据标准。
