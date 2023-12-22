@@ -8,5 +8,10 @@
     "type": "file",
     "name": "flink-kubernetes-operator",
     "label": "nav.quick-start.prepare.install-dependency.flink-kubernetes-operator"
+  },
+  {
+    "type": "file",
+    "name": "doris-operator",
+    "label": "nav.quick-start.prepare.install-dependency.doris-operator"
   }
 ]

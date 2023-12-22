@@ -55,6 +55,10 @@
     "zh": "Flink Kubernetes Operator",
     "en": "Flink Kubernetes Operator"
   },
+  "nav.quick-start.prepare.install-dependency.doris-operator": {
+    "zh": "Doris Operator",
+    "en": "Doris Operator"
+  },
   "nav.quick-start.compile": {
     "zh": "编译",
     "en": "Compile"
