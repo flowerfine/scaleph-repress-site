@@ -10,8 +10,8 @@ export default defineConfig({
     logo: '/scaleph-icon.png',
     lang: 'zh',
     multiVersion: {
-        default: '2.0.1',
-        versions: ['2.0.1', '2.0.0', '1.0.4'],
+        default: 'dev',
+        versions: ['dev', '2.0.1', '2.0.0', '1.0.4'],
     },
     themeConfig: {
         lastUpdated: true,

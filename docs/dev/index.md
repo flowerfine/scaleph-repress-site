@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /2.0.1/quick-start/quick-start/initialize/
+      link: /quick-start/quick-start/initialize/
     - theme: alt
       text: 概览
-      link: /2.0.1/quick-start/
+      link: /quick-start/
   image:
     src: /scaleph-icon.png
     alt: Scaleph Logo
