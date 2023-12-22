@@ -3,8 +3,8 @@ pageType: home
 
 hero:
   name: Scaleph
-  text: 开放数据平台，具备 Flink 和 SeaTunnel 任务管理能力
-  tagline: Flink, SeaTunnel, Kubernetes
+  text: 开放数据平台，具备 Flink、SeaTunnel 和 Doris 管理能力
+  tagline: Flink, SeaTunnel, Doris, Kubernetes
   actions:
     - theme: brand
       text: 快速开始

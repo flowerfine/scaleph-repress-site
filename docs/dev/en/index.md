@@ -3,8 +3,8 @@ pageType: home
 
 hero:
   name: Scaleph
-  text: Open data platform based on Flink and Kubernetes, support Flink and SeaTunnel
-  tagline: Flink, SeaTunnel, Kubernetes
+  text: Open data platform based on Flink and Kubernetes, support Flink、SeaTunnel and Doris
+  tagline: Flink, SeaTunnel, Doris, Kubernetes
   actions:
     - theme: brand
       text: Quick Start
