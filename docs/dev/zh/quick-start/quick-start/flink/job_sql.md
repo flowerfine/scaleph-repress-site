@@ -10,25 +10,25 @@
 
 在 `项目` -> `Flink Kubernetes` -> `SessionCluster` 点击【新建】按钮，创建 Session Cluster：
 
-![flink-kubernetes-session-cluster-new](./images//session-cluster/flink-kubernetes-session-cluster-new.jpg)
+![flink-kubernetes-session-cluster-new](./images/session-cluster/flink-kubernetes-session-cluster-new.jpg)
 
 点击【新建】按钮后，进入分步表单，以此填写 `Cluster&Template`、`Options`，并在 `YAML` 查看最终的 yaml 效果：
 
-![flink-kubernetes-session-cluster-new-step-1](./images//session-cluster/flink-kubernetes-session-cluster-new-step-1.jpg)
+![flink-kubernetes-session-cluster-new-step-1](./images/session-cluster/flink-kubernetes-session-cluster-new-step-1.jpg)
 
-![flink-kubernetes-session-cluster-new-step-2](./images//session-cluster/flink-kubernetes-session-cluster-new-step-2.jpg)
+![flink-kubernetes-session-cluster-new-step-2](./images/session-cluster/flink-kubernetes-session-cluster-new-step-2.jpg)
 
-![flink-kubernetes-session-cluster-new-step-3](./images//session-cluster/flink-kubernetes-session-cluster-new-step-3.jpg)
+![flink-kubernetes-session-cluster-new-step-3](./images/session-cluster/flink-kubernetes-session-cluster-new-step-3.jpg)
 
 创建完成后，可以点击【启动】按钮部署 session cluster，点击【Sql Gateway】启动 SQL Gateway：
 
-![flink-kubernetes-session-cluster-list](./images//session-cluster/flink-kubernetes-session-cluster-list.jpg)
+![flink-kubernetes-session-cluster-list](./images/session-cluster/flink-kubernetes-session-cluster-list.jpg)
 
 用户可以在 session cluster 详情页部署或关闭 session cluster，并查看 Flink web ui：
 
-![flink-kubernetes-session-cluster-detail](./images//session-cluster/flink-kubernetes-session-cluster-detail.jpg)
+![flink-kubernetes-session-cluster-detail](./images/session-cluster/flink-kubernetes-session-cluster-detail.jpg)
 
-![flink-kubernetes-session-cluster-webui](./images//session-cluster/flink-kubernetes-session-cluster-webui.jpg)
+![flink-kubernetes-session-cluster-webui](./images/session-cluster/flink-kubernetes-session-cluster-webui.jpg)
 
 ## SQL 开发
 

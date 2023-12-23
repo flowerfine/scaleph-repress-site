@@ -87,6 +87,10 @@
     "zh": "初始化系统",
     "en": "Initialize System"
   },
+  "nav.quick-start.quick-start.flink&seatunnel": {
+    "zh": "Flink&SeaTunnel",
+    "en": "Flink&SeaTunnel"
+  },
   "nav.quick-start.quick-start.flink_cluster": {
     "zh": "Flink 集群",
     "en": "Flink Cluster"
