@@ -167,6 +167,10 @@
     "zh": "路线图",
     "en": "Roadmap"
   },
+  "nav.roadmap.plan": {
+    "zh": "开发计划",
+    "en": "Plan"
+  },
   "nav.contribute": {
     "zh": "参与贡献",
     "en": "How To Contribute"
