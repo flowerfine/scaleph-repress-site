@@ -23,5 +23,10 @@
     "type": "file",
     "name": "job_seatunnel",
     "label": "nav.quick-start.quick-start.job_seatunnel"
+  },
+  {
+    "type": "dir",
+    "name": "doris",
+    "label": "nav.quick-start.quick-start.doris"
   }
 ]

@@ -107,6 +107,14 @@
     "zh": "SeaTunnel On Flink 任务",
     "en": "SeaTunnel On Flink Job"
   },
+  "nav.quick-start.quick-start.doris": {
+    "zh": "Doris",
+    "en": "Doris"
+  },
+  "nav.quick-start.quick-start.doris.index": {
+    "zh": "创建集群",
+    "en": "Create Cluster"
+  },
   "nav.guide": {
     "zh": "使用指南",
     "en": "Guide"
