@@ -115,6 +115,10 @@
     "zh": "使用指南",
     "en": "Guide"
   },
+  "nav.guide.doris": {
+    "zh": "Doris",
+    "en": "Doris"
+  },
   "nav.design": {
     "zh": "功能设计",
     "en": "Design"
