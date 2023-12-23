@@ -1,6 +1,6 @@
 # Doris 使用指南
 
-使用功能
+Doris 使用介绍
 
 ## Template
 
