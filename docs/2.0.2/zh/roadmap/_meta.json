@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.roadmap.overview"
+  },
+  {
+    "type": "file",
+    "name": "roadmap",
+    "label": "nav.roadmap.roadmap"
+  },
+  {
+    "type": "file",
+    "name": "plan",
+    "label": "nav.roadmap.plan"
+  }
+]

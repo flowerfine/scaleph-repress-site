@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "nginx-ingress-controller",
+    "label": "nav.quick-start.prepare.install-dependency.nginx-ingress-controller"
+  },
+  {
+    "type": "file",
+    "name": "flink-kubernetes-operator",
+    "label": "nav.quick-start.prepare.install-dependency.flink-kubernetes-operator"
+  },
+  {
+    "type": "file",
+    "name": "doris-operator",
+    "label": "nav.quick-start.prepare.install-dependency.doris-operator"
+  }
+]

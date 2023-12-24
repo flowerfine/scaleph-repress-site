@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.guide.index"
+  },
+  {
+    "type": "dir",
+    "name": "doris",
+    "label": "nav.guide.doris"
+  }
+]

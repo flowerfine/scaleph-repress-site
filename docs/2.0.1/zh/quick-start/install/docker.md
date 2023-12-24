@@ -26,7 +26,7 @@
 git clone https://github.com/flowerfine/scaleph.git --depth 1
 # 切换到 2.0.1 分支
 git fetch origin 2.0.1
-cd 2.0.1
+git checkout 2.0.1
 
 cd scaleph/tools/docker/deploy/scaleph
 

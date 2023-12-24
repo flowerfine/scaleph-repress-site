@@ -1,0 +1,34 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.quick-start.index"
+  },
+  {
+    "type": "file",
+    "name": "why",
+    "label": "nav.quick-start.why"
+  },
+  {
+    "type": "file",
+    "name": "requirement",
+    "label": "nav.quick-start.requirement"
+  },
+  {
+    "type": "dir",
+    "name": "prepare",
+    "label": "nav.quick-start.prepare"
+  },
+  {
+    "type": "dir",
+    "name": "install",
+    "collapsed": true,
+    "label": "nav.quick-start.install"
+  },
+  {
+    "type": "dir",
+    "name": "quick-start",
+    "collapsed": true,
+    "label": "nav.quick-start.quick-start"
+  }
+]
