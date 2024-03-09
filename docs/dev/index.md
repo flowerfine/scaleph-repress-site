@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /quick-start/quick-start/initialize/
+      link: /quick-start/
     - theme: alt
       text: 概览
       link: /quick-start/
