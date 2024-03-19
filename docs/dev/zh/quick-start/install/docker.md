@@ -30,6 +30,8 @@ git checkout 2.0.2
 
 cd scaleph/tools/docker/deploy/scaleph
 
+# 修改镜像版本至 v2.0.2，代码中镜像 tag 错误，需进行修正
+
 # 下载依赖 && scaleph 组件
 docker compose pull
 
