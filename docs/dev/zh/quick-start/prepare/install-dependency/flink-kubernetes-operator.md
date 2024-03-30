@@ -21,10 +21,10 @@
    kubectl create -f https://github.com/jetstack/cert-manager/releases/download/v1.8.2/cert-manager.yaml
    
    # 安装 flink-kubernetes-operator
-   helm repo add flink-kubernetes-operator-1.7.0 https://archive.apache.org/dist/flink/flink-kubernetes-operator-1.7.0/
+   helm repo add flink-kubernetes-operator-1.8.0 https://archive.apache.org/dist/flink/flink-kubernetes-operator-1.8.0/
    # 修改 flink 镜像仓库为 apache/flink-kubernetes-operator
    # 默认是从 github packages 下载，从 github 下载比较慢，换成 dockerhub 
-   helm install flink-kubernetes-operator flink-kubernetes-operator-1.7.0/flink-kubernetes-operator --set webhook.create=false --set image.repository=apache/flink-kubernetes-operator
+   helm install flink-kubernetes-operator flink-kubernetes-operator-1.8.0/flink-kubernetes-operator --set webhook.create=false --set image.repository=apache/flink-kubernetes-operator
    
    # 查看安装状态
    kubectl get deployment
@@ -39,7 +39,7 @@
    # docker pull flink:1.17
    
    # 提交任务
-   kubectl create -f https://raw.githubusercontent.com/apache/flink-kubernetes-operator/release-1.7/examples/basic.yaml
+   kubectl create -f https://raw.githubusercontent.com/apache/flink-kubernetes-operator/release-1.8/examples/basic.yaml
    ```
 
 4. 查看任务
