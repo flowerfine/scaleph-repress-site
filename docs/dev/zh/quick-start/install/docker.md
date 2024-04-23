@@ -13,6 +13,7 @@
 - redis
 - mysql
 - minio
+- gravitino。元数据
 
 `scaleph` 应用本身由 2 个组件组成：
 
