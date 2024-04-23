@@ -24,43 +24,54 @@
 scaleph
 ├── docs
 ├── scaleph-api                                          # scaleph 服务端入口
+├── scaleph-application                                  # scaleph 应用管理模块。参考 OAM 模型，管理 Flink 和 Doris 实例
+│   ├── scaleph-application-doris                        # Doris OAM 适配模块
+│   └── scaleph-application-flink                        # Flink OAM 适配模块
 ├── scaleph-common
-├── scaleph-core
-│   └── scaleph-core-scheduler
+├── scaleph-config
 ├── scaleph-dao
+├── scaleph-dataservice                                  # 数据服务
 ├── scaleph-datasource                                   # 数据源管理
+├── scaleph-dist                                         # scaleph 打包模块
 ├── scaleph-engine
-│   ├── scaleph-engine-flink                             # 基于 flinkful 实现的 flink 任务提交
-│   ├── scaleph-engine-flink-kubernetes                  # 基于 flink-kubernetes-operator 实现的 flink 任务提交，开发中
-│   ├── scaleph-engine-seatunnel                         # seatunnel 任务生成，可视化拖拉拽服务
-│   └── scaleph-engine-sql                               # flink sql 服务，开发中
-├── scaleph-meta                                         # 元数据模块，暂未启用
+│   ├── scaleph-engine-flink-client                      # Flink Web UI 接口对接
+│   ├── scaleph-engine-sql-gateway                       # Flink SQL Gateway 集成
+│   └── scaleph-sql-template                             # Flink SQL Template Jar
+├── scaleph-file-fetcher                                 # 文件下载 sidecar 实现
+├── scaleph-kubernetes                                   # Kubernetes 相关功能
+├── scaleph-meta                                         # 元数据模块。后续对接 gravitino，与 scaleph-datasource 打通
 ├── scaleph-plugins                                      # 插件模块
 │   ├── scaleph-plugin-datasource                        # 数据源插件，暂未启用
-│   ├── scaleph-plugin-flink                             # flink 插件，提供 flink 多版本功能，开发中
-│   │   ├── scaleph-plugin-flink-api
-│   │   └── scaleph-plugin-flink-1.13
+│   ├── scaleph-plugin-flinkcdc                          # Flink-CDC pipeline connectors 插件
 │   ├── scaleph-plugin-framework                         # 插件框架
-│   ├── scaleph-plugin-seatunnel-connectors              # seatunnel v2 connectors 插件
-│   └── scaleph-plugin-seatunnel-native-flink            # seatunntl v1 connectors 插件，暂未启用
+│   ├── scaleph-plugin-seatunnel-connectors              # SeaTunnel v2 connectors 插件
+│   └── scaleph-plugin-seatunnel-native-flink            # SeaTunntl v1 connectors 插件，暂未启用
 ├── scaleph-resource                                     # 资源模块，提供文件上传下载
 ├── scaleph-security                                     # 用户权限模块
 ├── scaleph-support
 │   ├── scaleph-cache                                    # 缓存模块
+│   ├── scaleph-dag                                      # Dag 模块。已接入 SeaTunnel、 Flink-CDC 和 WorkFlow
 │   ├── scaleph-generator                                # 代码生成模块。生成 mybatis-plus 的 entity、mapper、xml
 │   ├── scaleph-log                                      # 日志模块，存储用户登录、操作日志，站内信，调度日志等
 │   ├── scaleph-mail                                     # 邮箱模块。如发送用户激活邮件
 │   ├── scaleph-privilege                                # 系统权限模块。防止插件调用 `System.exit()` 导致 JVM 退出
+│   ├── scaleph-queue                                    # 队列封装，目前基于 spring event 机制，后续可扩展至 Kafka 等消息队列
 │   ├── scaleph-storage                                  # 存储模块。基于 HDFS 文件系统实现
 │   └── scaleph-system                                   # 系统模块。配置、字典等
-├── scaleph-ui                                           # 基于 angular 开发的 ui，暂未启用
-├── scaleph-ui-react                                     # 基于 react + antd 开发的 ui，使用中
+├── scaleph-ui-react                                     # 基于 React + antd 开发的 ui，使用中
+├── scaleph-ui-react2                                    # 基于 React + antd 开发的 ui，已废弃，模块待移除
 ├── scaleph-workflow                                     # workflow 模块，提供调度功能
 │   ├── scaleph-workflow-api
-│   └── scaleph-workflow-quartz                          # 基于 quartz 实现的系统调度任务
+│   └── scaleph-workflow-quartz                          # 基于 Quartz 实现 WorkFlow Trigger
+├── scaleph-workspace                                    # 工作空间。
+│   ├── scaleph-workspace-flink                          # Flink 相关。主要是 Flink Jar
+│   ├── scaleph-workspace-flink-cdc                      # Flink CDC 相关
+│   ├── scaleph-workspace-flink-sql                      # Flink SQL 相关
+│   ├── scaleph-workspace-project                        # 项目模块。工作空间按照项目隔离
+│   └── scaleph-workspace-seatunnel                      # SeaTunnel 相关
 └── tools
     ├── checkstyle
-    ├── docker                                           # docker 工具
+    ├── docker                                           # Docker 工具
     ├── kubernetes
     └── spotbugs
 ```

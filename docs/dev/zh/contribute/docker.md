@@ -16,6 +16,9 @@ Docker 提供了一套轻量、标准化的解决方案，提升开发、部署�
 - mysql。`tools/docker/mysql/init.d` 存储 `scaleph` 所有的 sql 文件。
 - redis。
 - minio。minio 作为文件存储中间件，可使用 HDFS、OSS、S3 代替
+- [gravitino](https://github.com/datastrato/gravitino)。元数据，类似的有 [metacat](https://github.com/Netflix/metacat)。
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`。postgresql 与此同理
+
 
 ```shell
 cd tools/docker/local
