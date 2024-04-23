@@ -19,6 +19,7 @@
   * `docker pull bitnami/mysql:8.0`。与 `ghcr.io/flowerfine/scaleph/mysql:v2.0.2` 功能重叠，`ghcr.io/flowerfine/scaleph/mysql:v2.0.2` 内置了 scaleph 初始 sql。
   * `docker pull bitnami/redis:7.0.10`
   * `docker pull bitnami/minio:2023.3.24`
+  * `docker pull datastrato/gravitino:0.4.0`
 * Flink 和 SeaTunnel 运行镜像
   * Jar
     * `docker pull flink:1.18`
@@ -27,4 +28,4 @@
     * `docker pull ghcr.io/flowerfine/scaleph-sql-template:1.18`
     * `docker pull ghcr.io/flowerfine/scaleph-sql-template:1.17`
   * SeaTunnel
-    * `docker pull ghcr.io/flowerfine/scaleph-seatunnel:2.3.4-flink-1.15`
+    * `docker pull ghcr.io/flowerfine/scaleph-seatunnel:2.3.4-flink-1.16`
