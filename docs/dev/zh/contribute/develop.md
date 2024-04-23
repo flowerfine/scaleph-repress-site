@@ -39,6 +39,9 @@ git clone https://github.com/flowerfine/scaleph.git --depth 1
 - redis
 - mysql
 - minio
+- [gravitino](https://github.com/datastrato/gravitino)。[小米下一代 Data AI 资产管理实践](https://www.infoq.cn/article/ZSGZr9BUkwMoxWLssDhJ)
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`。postgresql 与此同理
+
 
 其中 minio 作为文件存储中间件，可以使用 HDFS、OSS 以及 S3 代替。
 
@@ -60,10 +63,13 @@ docker compose up -d
   - host: http://127.0.0.1:9001
   - username: admin
   - password: password
+- gravitino。
+  - host: http://localhost:8090
+  
 
 ## 启动 scaleph-api
 
-`scaleph` 服务端启动类为 `cn.sliew.scaleph.Application`，位于 `scaleph-api` 模块。
+`scaleph` 服务端启动类为 `cn.sliew.scaleph.Application`，位于 `scaleph-api` 模块，`scaleph-api/src/main/java` 目录下。
 
 当能看到类似下面日志输出时即启动成功：
 
