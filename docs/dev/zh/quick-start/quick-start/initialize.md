@@ -10,6 +10,8 @@
 
 `scaleph` 支持多集群部署，用户可以将 Flink 或 SeaTunnel 任务部署至多个 Kubernetes 集群。
 
+==使用时需注意 Kubernetes 集群和 MySQL、Redis、Minio 以及 Gravitino 的网络是否连通。==如果使用 docker 在本地启动的 MySQL、Redis、Minio 和 Gravitino，地址都是 `localhost` 或 `127.0.0.1`。如果 Kubernetes 集群不是本地如远程服务器上的开发集群，任务运行在 Kubernetes 中尝试通过  `localhost` 或 `127.0.0.1` 访问 MySQL、Redis、Minio 和 Gravitino 服务就会出现连接失败问题。
+
 用户需上传 Kubernetes 集群 kubeconfig 文件，kubeconfig 文件一般位于 `$HOME/.kube/config`。通过 kubeconfig， `scaleph` 可以连接对应 Kubernetes 集群，提交任务。
 
 从 `资源` -> `Cluster Credential` -> `新增`进入上传页面：

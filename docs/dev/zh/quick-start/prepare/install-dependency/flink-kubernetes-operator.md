@@ -14,7 +14,7 @@
    1. [kubernetes](https://kubernetes.io/)
    2. [helm](https://helm.sh/zh/docs/intro/quickstart/)
 
-2. 安装 flink-kubernetes-operator，参考 [Try the Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.7/docs/try-flink-kubernetes-operator/quick-start/)
+2. 安装 flink-kubernetes-operator，参考 [Try the Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.8/docs/try-flink-kubernetes-operator/quick-start/)
 
    ```shell
    # 安装 cert-manager
@@ -65,7 +65,7 @@
 
 ## Ingress
 
-在 Kubernetes 中，外部访问集群内的服务有两种方式：[service](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) 和 [ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)。其中 Flink 的 web ui 对 service 的 3 种类型都进行了支持，[参考链接](https://nightlies.apache.org/flink/flink-docs-release-1.17/docs/deployment/resource-providers/native_kubernetes/#accessing-flinks-web-ui)：
+在 Kubernetes 中，外部访问集群内的服务有两种方式：[service](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) 和 [ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)。其中 Flink 的 web ui 对 service 的 3 种类型都进行了支持，[参考链接](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/resource-providers/native_kubernetes/#accessing-flinks-web-ui)：
 
 - ClusterIP
 - NodePort

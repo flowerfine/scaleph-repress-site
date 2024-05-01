@@ -2,7 +2,7 @@
 
 链接：
 
-* [基于 Doris-Operator 部署](https://doris.apache.org/zh-CN/docs/install/k8s-deploy)
+* [基于 Doris-Operator 部署](https://doris.apache.org/zh-CN/docs/install/cluster-deployment/k8s-deploy/install-operator)
 * [doris-operator](https://github.com/selectdb/doris-operator)
 
 ## 安装

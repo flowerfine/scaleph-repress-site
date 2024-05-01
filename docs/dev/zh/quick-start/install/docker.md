@@ -13,11 +13,13 @@
 - redis
 - mysql
 - minio
-- gravitino。元数据
+- [gravitino](https://github.com/datastrato/gravitino)。元数据
 
 `scaleph` 应用本身由 2 个组件组成：
 
 - [scaleph-api](https://github.com/flowerfine/scaleph/pkgs/container/scaleph%2Fscaleph-api)。服务端。
+  - 如果使用 docker 在本地启动的 MySQL、Redis、Minio 和 Gravitino，地址都是 `localhost` 或 `127.0.0.1`。如果 Kubernetes 集群不是本地如远程服务器上的开发集群，任务运行在 Kubernetes 中尝试通过  `localhost` 或 `127.0.0.1` 访问 MySQL、Redis、Minio 和 Gravitino 服务就会出现连接失败问题。在启动服务端时，如果是 `localhost` 或 `127.0.0.1` 地址，需替换成本地的 IP 地址。
+
 - [scaleph-ui-react](https://github.com/flowerfine/scaleph/pkgs/container/scaleph%2Fscaleph-ui-react)。前端。
 
 下载镜像，一键启动
@@ -29,6 +31,8 @@ git clone https://github.com/flowerfine/scaleph.git --depth 1
 git fetch origin 2.0.3
 git checkout 2.0.3
 
+# 将镜像 tag 从 latest 切换到 v2.0.3。latest 为开发中的最新版本
+# 
 cd scaleph/tools/docker/deploy/scaleph
 
 # 下载依赖 && scaleph 组件

@@ -28,10 +28,10 @@
 Flink 支持多种资源方式：
 
 * Standalone。`Standalone` 方式仅仅使用容器和 Kubernetes 作为服务器资源提供者，Flink 无法感知到自己运行在容器或 Kubernetes 中。Flink 运行所需要的资源都需要用户手动管理和维护
-  * [Docker](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/deployment/resource-providers/standalone/docker/)
-  * [Kubernetes](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/deployment/resource-providers/standalone/kubernetes/)
+  * [Docker](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/resource-providers/standalone/docker/)
+  * [Kubernetes](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/resource-providers/standalone/kubernetes/)
 * YARN
-* [Native Kubernetes](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/deployment/resource-providers/native_kubernetes/)。Flink 直接访问 Kubernetes，申请和管理资源。
+* [Native Kubernetes](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/resource-providers/native_kubernetes/)。Flink 直接访问 Kubernetes，申请和管理资源。
 
 用户在使用 `scaleph` 运行 Flink 任务前，需对 Flink 运行在容器和 Kubernetes 原理有个基础了解，实践 Flink 文档 example，确定自己提供的容器和 Kubernetes 环境能够运行 Flink 任务。
 
@@ -39,16 +39,16 @@ Flink 支持多种资源方式：
 
 Flink Kubernetes Operator 运行所需
 
-* [Quick Start](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.7/docs/try-flink-kubernetes-operator/quick-start/)
+* [Quick Start](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.8/docs/try-flink-kubernetes-operator/quick-start/)
 
 ## SeaTunnel
 
-* [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.3/start-v2/locally/deployment#step-3-install-connectors-plugin)
-* [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.3/start-v2/kubernetes/)
+* [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.4/start-v2/locally/deployment#step-3-install-connectors-plugin)
+* [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.4/start-v2/kubernetes/)
 
 ## Doris
 
-* [基于 Doris-Operator 部署](https://doris.apache.org/zh-CN/docs/install/k8s-deploy)
+* [基于 Doris-Operator 部署](https://doris.apache.org/zh-CN/docs/install/cluster-deployment/k8s-deploy/install-operator)
 
 
 

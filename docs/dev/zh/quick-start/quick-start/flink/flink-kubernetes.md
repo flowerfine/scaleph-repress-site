@@ -49,7 +49,7 @@ Flink 作为有状态的流式计算引擎，状态存储、checkpoint 配置会
 
 ## Template
 
-用户可以在 `项目` -> `Flink Kubernetes` -> `Template` 中，创建或修改模板。
+用户可以在 `项目` -> `引擎管理` -> `计算引擎` -> `Flink` -> `部署模板` 中，创建或修改模板。
 
 ![flink-kubernetes-template-list](./images/flink-kubernetes/flink-kubernetes-template-list.jpg)
 
@@ -66,7 +66,7 @@ Flink 作为有状态的流式计算引擎，状态存储、checkpoint 配置会
 
 ## Session Cluster
 
-`项目` -> `Flink Kubernetes` -> `SessionCluster` 代表 Flink 支持的 session 模式，用户可以这里创建一个 session cluster。
+`项目` -> `引擎管理` -> `计算引擎` -> `Flink` -> `Session 集群` 代表 Flink 支持的 session 模式，用户可以这里创建一个 session cluster。
 
 ![flink-kubernetes-sessioncluster-list](./images/flink-kubernetes/flink-kubernetes-sessioncluster-list.jpg)
 
@@ -79,7 +79,7 @@ Flink 作为有状态的流式计算引擎，状态存储、checkpoint 配置会
 
 ## Deployment
 
-与 `SessionCluster` 类似，`项目` -> `Flink Kubernetes` -> `SessionCluster` 代表 Flink 支持的 application 模式。用户创建 `Deployment` 后，稍后可在 `项目` -> `Flink Kubernetes` -> `Job` 应用 `Deployment`。 
+与 `SessionCluster` 类似，`项目` -> `引擎管理` -> `计算引擎` -> `Flink` -> `Deployment` 代表 Flink 支持的 application 模式。用户创建 `Deployment` 后，稍后可在 `项目` -> `运维中心` -> `Flink任务` 应用 `Deployment`。 
 
 ![flink-kubernetes-deployment-list](./images/flink-kubernetes/flink-kubernetes-deployment-list.jpg)
 
@@ -87,9 +87,10 @@ Flink 作为有状态的流式计算引擎，状态存储、checkpoint 配置会
 
 ## Job
 
-`Job` 部分支持 3 种任务类型，分别是：
+`Job` 部分支持 4 种任务类型，分别是：
 
 * Jar
 * SQL
 * SeaTunnel。Flink 引擎
+* Flink CDC。尚未支持，待社区推出 Flink Kubernetes Operator 解决方案
 

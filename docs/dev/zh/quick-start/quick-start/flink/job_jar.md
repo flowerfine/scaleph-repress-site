@@ -4,7 +4,7 @@
 
 ## Artifact
 
-首先上传 Jar artifact，操作路径为 `项目` -> `Artifact 管理` -> `Jar`。以 Flink 提供的 examples 为例：
+首先上传 Jar artifact，操作路径为 `项目` -> `数据开发` -> `Flink Jar`。以 Flink 提供的 examples 为例：
 
 ![job_jar_new_upload_params](./images/job/jar/job_jar_new_upload_params.jpg)
 
@@ -14,7 +14,7 @@
 
 ## 启动任务
 
-用户可以在 `项目` -> `Flink Kubernets` -> `Job` 部署 Jar 类型作业：
+用户可以在 `项目` -> `运维中心` -> `Flink任务` 部署 Jar 类型作业：
 
 ![job-jar-deploy-form](./images/job/jar/job-jar-deploy-form.jpg)
 
