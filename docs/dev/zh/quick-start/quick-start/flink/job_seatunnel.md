@@ -1,4 +1,4 @@
-# SeaTunnel
+SeaTunnel
 
 `scaleph` 提供了 web 页面拖拉拽的任务创建方式，帮助用户可视化地使用 SeaTunnel 进行数据同步。
 
@@ -47,10 +47,6 @@ DAG 页面布局如下：
 
 ![flink-artifact-seatunnel-canvas-connector](./images/job/seatunnel/flink-artifact-seatunnel-canvas-connector.jpg)
 
-任务配置效果如下：
-
-![flink-artifact-seatunnel-canvas-result](./images/job/seatunnel/flink-artifact-seatunnel-canvas-result.jpg)
-
 可以点击 `上方工具栏 -> 【保存】按钮和【预览】按钮` 进行配置保存和预览：
 
 ![flink-artifact-seatunnel-canvas-preview](./images/job/seatunnel/flink-artifact-seatunnel-canvas-preview.jpg)
@@ -65,9 +61,13 @@ config 库易于读取解析 HOCON 配置，但是不易生成。`scaleph` 使�
 
 SeaTunnel 作为新一代的数据集成引擎，同时支持 Flink、Spark 和自研 Zeta 引擎。`scaleph` 只单独支持了 Flink 引擎，将 SeaTunnel 任务作为 Flink Jar 形式的任务提交到 Kubernetes。
 
-用户可以在 `项目` -> `Flink Kubernets` -> `Job` 部署 SeaTunnel 类型作业：
+用户可以在 `项目` -> `运维中心` -> `Flink任务` 部署 SeaTunnel 类型任务：
 
 ![job-seatunnel-deploy-form](./images/job/seatunnel/job-seatunnel-deploy-form.jpg)
+
+可创建 2 个 SeaTunnel 任务：
+
+![job-seatunnel-list](./images/job/seatunnel/job-seatunnel-list.jpg)
 
 创建完成后，进入详情页，点击 `Deploy` 启动任务：：
 
@@ -77,8 +77,16 @@ SeaTunnel 作为新一代的数据集成引擎，同时支持 Flink、Spark 和�
 
 观察 Flink 任务启动日志，可以查看到 `SeaTunnel` 定义的 starter Jar 执行 任务：
 
-![job-seatunnel-log](./images/job/seatunnel/job-seatunnel-log.jpg)
+![job-seatunnel-log-fake](./images/job/seatunnel/job-seatunnel-log-fake.jpg)
 
 Flink 任务开始启动、运行，用户可通过 `Flink UI` 按钮获取 Flink 任务的 webui：
 
-![job-seatunnel-webui](./images/job/seatunnel/job-seatunnel-webui.jpg)
+![job-seatunnel-webui-fake](./images/job/seatunnel/job-seatunnel-webui-fake.jpg)
+
+对于 Jdbc 任务，Flink 任务启动日志：
+
+![job-seatunnel-log-jdbc](./images/job/seatunnel/job-seatunnel-log-jdbc.jpg)
+
+查看 MySQL，可以查看到对应的数据：
+
+![job-seatunnel-data-jdbc](./images/job/seatunnel/job-seatunnel-data-jdbc.jpg)
