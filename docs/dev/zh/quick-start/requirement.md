@@ -7,9 +7,9 @@
 `scaleph` 的用户分为 2 类：
 
 * 维护者。需处理安装部署、问题排查、开发升级等
-* 使用者。进行数据工作
+* 使用者。进行数据集成、开发工作
 
-`scaleph` 系统维护者需了解一下知识，使用者无需了解。
+`scaleph` 系统维护者需了解一下 `scaleph` 底层设计、安装部署、特性缺陷等知识，而这些使用者无需了解。
 
 ## 容器和 Kubernetes
 
@@ -25,7 +25,7 @@
 
 ## Flink
 
-Flink 支持多种资源方式：
+Flink 支持多种资源方式，用户需了解 Flink 社区提供的 Docker 和 Kubernetes 部署解决方案：
 
 * Standalone。`Standalone` 方式仅仅使用容器和 Kubernetes 作为服务器资源提供者，Flink 无法感知到自己运行在容器或 Kubernetes 中。Flink 运行所需要的资源都需要用户手动管理和维护
   * [Docker](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/resource-providers/standalone/docker/)
@@ -37,11 +37,13 @@ Flink 支持多种资源方式：
 
 ## Flink Kubernetes Operator
 
-Flink Kubernetes Operator 运行所需
+Flink Kubernetes Operator 运行所需，用户需实践 Flink Kuberenetes Operator 安装、任务提交流程，在使用 `scaleph` 前对 Flink Kubernetes Operator 有个了解：
 
 * [Quick Start](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-release-1.8/docs/try-flink-kubernetes-operator/quick-start/)
 
 ## SeaTunnel
+
+SeaTunnel 自身支持 3 种运行引擎：Flink、Spark 和 Zeta，同时也包含大量 connectors。用户需实践 SeaTunnel on Flink 的运行方式：
 
 * [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.4/start-v2/locally/deployment#step-3-install-connectors-plugin)
 * [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.4/start-v2/kubernetes/)

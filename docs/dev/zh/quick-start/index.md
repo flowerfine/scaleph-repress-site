@@ -1,6 +1,6 @@
 # 项目简介
 
-`scalelph` 是一个基于 [Flink](https://flink.apache.org/) 和 [Kubernetes](https://kubernetes.io/) 打造的开放数据平台，具备 [Flink](https://flink.apache.org/) 和 [SeaTunnel](https://seatunnel.apache.org/) 任务管理能力。
+`scalelph` 是一个基于 [Flink](https://flink.apache.org/) 和 [Kubernetes](https://kubernetes.io/) 打造的开放数据平台，具备 [Flink](https://flink.apache.org/) 和 [SeaTunnel](https://seatunnel.apache.org/) 任务管理能力，同时支持 [Doris](https://doris.apache.org/) 集群在 Kubernetes 上的运维部署。
 
 ## 企业级后台管理系统
 
@@ -21,20 +21,23 @@
 
 ## 能力地图
 
-`scaleph` 始于 2022 年初，一开始的定位在于为 SeaTunnel 开发一个 web 管理系统，实现 SeaTunnel 任务的创建、提交、停止等功能，类似 DataX 和 DataX-Web 之类的组合。在数据集成的功能上不断扩展，逐步向相关领域扩展，支持的功能如下：
+`scaleph` 始于 2022 年初，一开始的定位在于为 SeaTunnel 开发一个 web 管理系统，实现 SeaTunnel 任务的创建、提交、停止等功能，类似 DataX 和 DataX-Web 之类的组合。依托 Flink 和 Flink Kubernetes Operator，不断拓展向相关领域扩展，支持的功能如下：
 
 - 项目管理
 
   - 数据集成
 
     - 拖拉拽式的 web 任务开发方式。基于 2.3.4 版本的 [SeaTunnel](https://seatunnel.apache.org/)，支持 Flink 引擎。
+    - 集成 [Flink CDC](https://nightlies.apache.org/flink/flink-cdc-docs-stable/)。尚未完成，Flink CDC 暂不支持 Kubernetes Native Application 和 Flink Kubernetes Operator 部署
   - 数据开发
     - Flink 管理。与 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 深度集成，以 operator 模式提供了 Template -> Session-Cluster、Deployment -> Job 的 Flink 任务层级管理。 
     - Jar 任务管理。上传基于 Flink DataStream  和 Table API 开发的 jar 包。
     - SQL 任务管理、在线开发。在线 Flink SQL 编辑器，基于 [SQL Gateway](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/dev/table/sql-gateway/overview/) 提供在线调试、运行。
   - Doris 集群运维
     - 集成 [doris-operator](https://github.com/selectdb/doris-operator)，提供 Doris on k8s 部署能力。
-- 数据源管理。对主流数据源提供管理，支持数据源连接信息的统一管理和共享。
+- 元数据。
+  - 对主流数据源提供管理，支持数据源连接信息的统一管理和共享。
+  - 集成 [gravitino](https://github.com/datastrato/gravitino)。实现元数据管理
 - 资源管理。Kubernetes 集群管理
 - 数据标准。
 - 后台系统。

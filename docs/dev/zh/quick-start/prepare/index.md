@@ -12,8 +12,8 @@
   * Kubernetes
   * [Helm](https://helm.sh/zh/docs/intro/install/)。类似 Java 有 maven、gradle，Node 有 npm，Helm 提供在 Kubernetes 部署应用功能。
 * 安装 Kubernetes 所需依赖
-  * Prometheus Operator
-  * Grafana Operator
+  * Prometheus Operator。`scaleph` 不依赖，推荐安装
+  * Grafana Operator。`scaleph` 不依赖，推荐安装
   * Nginx Ingress Controller
   * Flink Kubernetes Operator
   * Doris Operator
