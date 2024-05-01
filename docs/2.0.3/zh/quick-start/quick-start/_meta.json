@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "initialize",
+    "label": "nav.quick-start.quick-start.initialize"
+  },
+  {
+    "type": "dir",
+    "name": "flink",
+    "label": "nav.quick-start.quick-start.flink&seatunnel"
+  },
+  {
+    "type": "dir",
+    "name": "doris",
+    "label": "nav.quick-start.quick-start.doris"
+  }
+]
