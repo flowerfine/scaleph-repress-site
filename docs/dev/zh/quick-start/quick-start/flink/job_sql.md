@@ -2,13 +2,13 @@
 
 `scaleph` 对接了 [SQL Gateway](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/dev/table/sql-gateway/overview/) 提供了 Flink SQL online 编辑器，用户可以在线开发、调试 Flink SQL 任务。
 
-任务上线时，用户需在 `项目` -> `Flink Kubernetes` -> `Job` 部署 SQL 任务。
+任务上线时，用户需在 `项目` -> `运维中心` -> `Flink任务` 部署 SQL 任务。
 
  [SQL Gateway](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/dev/table/sql-gateway/overview/) 不支持 Application 默认运行，因此只能支持 kubernetes-session 方式，用户在使用 Flink SQL online 编辑器前需创建一个 Session Cluster，并启用 SQL Gateway。
 
 ## 创建 Session Cluster
 
-在 `项目` -> `Flink Kubernetes` -> `SessionCluster` 点击【新建】按钮，创建 Session Cluster：
+在 `项目` -> `引擎管理` -> `计算引擎` -> `Flink` -> `Session 集群` 点击【新建】按钮，创建 Session Cluster：
 
 ![flink-kubernetes-session-cluster-new](./images/session-cluster/flink-kubernetes-session-cluster-new.jpg)
 
