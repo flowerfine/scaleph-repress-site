@@ -37,7 +37,7 @@ SeaTunnel
 
 DAG 页面布局如下：
 
-- 左侧侧边栏。connector 列表，SeaTunnel 2.3.3 支持 source、 sink 和 transform connectors，上方检索框提供 connector 搜索功能。
+- 左侧侧边栏。connector 列表，SeaTunnel 2.3.4 支持 source、 sink 和 transform connectors，上方检索框提供 connector 搜索功能。
 - 中间主体。connector DAG，拖拉拽生成 SeaTunnel 任务主体部分。
 - 上方工具栏。`【保存】` 和 `【预览】`按钮。
 - 右侧工具栏。缩放功能。
