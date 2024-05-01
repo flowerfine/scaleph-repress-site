@@ -13,7 +13,7 @@
 
 ### 数据源管理
 
-在 `数据源 -> 【新增】按钮` 选择数据源：
+在 `元数据` -> `数据源` -> `数据源信息` -> `【新增】按钮` 选择数据源：
 
 ![datasource_new](./images/job/datasource_new.png)
 
@@ -27,7 +27,7 @@
 
 ### SeaTunnel
 
-数据源创建完成后，即可在 `项目` -> `Artifact 管理` -> `SeaTunnel` 创建 SeaTunnel 任务：
+数据源创建完成后，即可在 `项目` -> `数据集成` -> `SeaTunnel` 创建 SeaTunnel 任务：
 
 ![flink-artifact-seatunnel-new](./images/job/seatunnel/flink-artifact-seatunnel-new.jpg)
 
