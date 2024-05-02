@@ -38,7 +38,12 @@ npm run build --prod
 
 ### 容器内编译
 
-`scaleph` 服务端和前端的编译需要安装 JDK 和 Node，通过容器内编译，可以统一编译环境，无需用户准备对应版本的 JDK 和 Node。
+通过容器内编译，可以统一编译环境，无需用户准备对应版本的 JDK 和 Node，避免 `scaleph` 在本地开发、CI 环节和二次开发编译打包因为环境问题导致行为不一致。
+
+类似的参考：
+
+* doris。[使用 Docker 开发镜像编译（推荐）](https://doris.apache.org/zh-CN/docs/install/source-install/compilation-with-docker)
+* ranger。[build_ranger_using_docker.sh](https://github.com/apache/ranger/blob/master/build_ranger_using_docker.sh)
 
 开发者需安装如下环境：
 
