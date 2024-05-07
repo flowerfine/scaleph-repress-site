@@ -45,8 +45,8 @@ Flink Kubernetes Operator 运行所需，用户需实践 Flink Kuberenetes Opera
 
 SeaTunnel 自身支持 3 种运行引擎：Flink、Spark 和 Zeta，同时也包含大量 connectors。用户需实践 SeaTunnel on Flink 的运行方式：
 
-* [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.4/start-v2/locally/deployment#step-3-install-connectors-plugin)
-* [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.4/start-v2/kubernetes/)
+* [Install connectors plugin](https://seatunnel.apache.org/docs/2.3.5/start-v2/locally/deployment#step-3-install-connectors-plugin)
+* [Set Up with Kubernetes](https://seatunnel.apache.org/docs/2.3.5/start-v2/kubernetes/)
 
 ## Doris
 

@@ -27,7 +27,7 @@
 
   - 数据集成
 
-    - 拖拉拽式的 web 任务开发方式。基于 2.3.4 版本的 [SeaTunnel](https://seatunnel.apache.org/)，支持 Flink 引擎。
+    - 拖拉拽式的 web 任务开发方式。基于 2.3.5 版本的 [SeaTunnel](https://seatunnel.apache.org/)，支持 Flink 引擎。
     - 集成 [Flink CDC](https://nightlies.apache.org/flink/flink-cdc-docs-stable/)。尚未完成，Flink CDC 暂不支持 Kubernetes Native Application 和 Flink Kubernetes Operator 部署
   - 数据开发
     - Flink 管理。与 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 深度集成，以 operator 模式提供了 Template -> Session-Cluster、Deployment -> Job 的 Flink 任务层级管理。 

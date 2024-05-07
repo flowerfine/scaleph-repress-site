@@ -30,4 +30,4 @@
     * `docker pull ghcr.io/flowerfine/scaleph-sql-template:1.18`
     * `docker pull ghcr.io/flowerfine/scaleph-sql-template:1.17`
   * SeaTunnel
-    * `docker pull ghcr.io/flowerfine/scaleph-seatunnel:2.3.4-flink-1.16`
+    * `docker pull ghcr.io/flowerfine/scaleph-seatunnel:2.3.5-flink-1.16`
