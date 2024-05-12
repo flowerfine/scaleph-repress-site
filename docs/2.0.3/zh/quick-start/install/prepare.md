@@ -8,7 +8,7 @@
 * redis。用户权限模块使用。
 * minio。`scaleph` 文件上传，Flink 任务运行期间产生的 checkpoints、savepoints 和 ha 数据。`scaleph` 未于 minio 深度绑定，用户可以按需切换 HDFS、OSS 等。
 * [gravitino](https://github.com/datastrato/gravitino)。元数据。
-  * mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本支持 mysql 5.x 驱动，对 mysql 8.x 驱动有兼容问题。其他类型数据源 如postgresql 与此同理。
+  * mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本 mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。其他类型数据源 如postgresql 与此同理。
 
 
 拉取镜像

@@ -17,7 +17,7 @@ Docker 提供了一套轻量、标准化的解决方案，提升开发、部署�
 - redis。
 - minio。minio 作为文件存储中间件，可使用 HDFS、OSS、S3 代替
 - [gravitino](https://github.com/datastrato/gravitino)。元数据，类似的有 [metacat](https://github.com/Netflix/metacat)。
-  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本支持 mysql 5.x 驱动，对 mysql 8.x 驱动有兼容问题。postgresql 与此同理
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0  版本mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。postgresql 与此同理
 
 
 ```shell

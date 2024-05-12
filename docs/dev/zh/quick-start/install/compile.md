@@ -15,7 +15,7 @@
 
 开发者需安装如下环境：
 
-- [JDK](https://adoptium.net/zh-CN/temurin/archive/)。下载并安装 open JDK 11。
+- [JDK](https://adoptium.net/zh-CN/temurin/archive/)。下载并安装 open JDK 17。
 - [Node](https://nodejs.org/en/download/releases/)。下载并安装 Node 16。
 - [Docker](https://docs.docker.com/get-docker/)。下载并安装 Docker，已有 Docker 环境时，使用 `docker version` 和 `docker compose version` 检查对应的版本，更新为最新版本。
 

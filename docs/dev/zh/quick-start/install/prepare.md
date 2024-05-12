@@ -8,17 +8,17 @@
 * redis。用户权限模块使用。
 * minio。`scaleph` 文件上传，Flink 任务运行期间产生的 checkpoints、savepoints 和 ha 数据。`scaleph` 未于 minio 深度绑定，用户可以按需切换 HDFS、OSS 等。
 * [gravitino](https://github.com/datastrato/gravitino)。元数据。
-  * mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本支持 mysql 5.x 驱动，对 mysql 8.x 驱动有兼容问题。其他类型数据源 如postgresql 与此同理
+  * mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本 mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。其他类型数据源 如postgresql 与此同理
 
 
 拉取镜像
 
 * `scaleph` 系统镜像
-  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-api:v2.0.3`
-  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-ui-react:v2.0.3`
-  * `docker pull ghcr.io/flowerfine/scaleph/mysql:v2.0.3`
+  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-api:v2.0.4`
+  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-ui-react:v2.0.4`
+  * `docker pull ghcr.io/flowerfine/scaleph/mysql:v2.0.4`
 * `scaleph` 依赖镜像
-  * `docker pull bitnami/mysql:8.0`。与 `ghcr.io/flowerfine/scaleph/mysql:v2.0.3` 功能重叠，`ghcr.io/flowerfine/scaleph/mysql:v2.0.3` 内置了 scaleph 初始 sql。
+  * `docker pull bitnami/mysql:8.0`。与 `ghcr.io/flowerfine/scaleph/mysql:v2.0.4` 功能重叠，`ghcr.io/flowerfine/scaleph/mysql:v2.0.4` 内置了 scaleph 初始 sql。
   * `docker pull bitnami/redis:7.0.10`
   * `docker pull bitnami/minio:2023.3.24`
   * `docker pull datastrato/gravitino:0.5.0`

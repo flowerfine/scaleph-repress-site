@@ -6,7 +6,7 @@
 
 开发者需安装如下程序：
 
-- [JDK](https://adoptium.net/zh-CN/temurin/archive/)。下载并安装 open JDK 11。
+- [JDK](https://adoptium.net/zh-CN/temurin/archive/)。下载并安装 open JDK 17。
 - [Node](https://nodejs.org/en/download/releases/)。下载并安装 Node 16。
 - [Docker](https://docs.docker.com/get-docker/)。下载并安装 Docker，已有 Docker 环境时，使用 `docker version` 和 `docker compose version` 检查对应的版本，更新为最新版本。
 
@@ -40,7 +40,7 @@ git clone https://github.com/flowerfine/scaleph.git --depth 1
 - mysql
 - minio
 - [gravitino](https://github.com/datastrato/gravitino)。[小米下一代 Data AI 资产管理实践](https://www.infoq.cn/article/ZSGZr9BUkwMoxWLssDhJ)
-  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本支持 mysql 5.x 驱动，对 mysql 8.x 驱动有兼容问题。postgresql 与此同理
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。postgresql 与此同理
 
 
 其中 minio 作为文件存储中间件，可以使用 HDFS、OSS 以及 S3 代替。

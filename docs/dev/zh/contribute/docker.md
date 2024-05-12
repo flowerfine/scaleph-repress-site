@@ -17,7 +17,7 @@ Docker 提供了一套轻量、标准化的解决方案，提升开发、部署�
 - redis。
 - minio。minio 作为文件存储中间件，可使用 HDFS、OSS、S3 代替
 - [gravitino](https://github.com/datastrato/gravitino)。元数据，类似的有 [metacat](https://github.com/Netflix/metacat)。
-  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本支持 mysql 5.x 驱动，对 mysql 8.x 驱动有兼容问题。postgresql 与此同理
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。postgresql 与此同理
 
 
 ```shell
@@ -29,7 +29,7 @@ docker compose up -d
 
 开源软件中编译环境绝对是导致应用运行异常的常见问题。
 
-`scaleph` 编译环境需要 JVM 和 Node，需要用户安装 JDK 11 和 Node 16 版本。如果环境不符合要求，那么就无法正常编译 `scaleph`。
+`scaleph` 编译环境需要 JVM 和 Node，需要用户安装 JDK 17 和 Node 16 版本。如果环境不符合要求，那么就无法正常编译 `scaleph`。
 
 Docker 一次编译，到处分发运行的特性，同样可以应用在编译场景：编译 `scaleph` 时，创建一个一次性运行的容器，在容器内执行编译过程，编译结束容器销毁，获取编译结果。
 
