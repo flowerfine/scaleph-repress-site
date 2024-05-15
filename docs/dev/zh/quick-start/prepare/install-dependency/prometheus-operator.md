@@ -12,7 +12,8 @@
 
 ```shell
 helm upgrade --install prometheus-operator kube-prometheus-stack \
-    --repo https://prometheus-community.github.io/helm-charts
+    --repo https://prometheus-community.github.io/helm-charts \
+    --values tools/kubernetes/prometheus/values-prometheus-operator.yaml
 ```
 
 参数说明：
