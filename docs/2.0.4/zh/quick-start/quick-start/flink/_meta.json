@@ -1,0 +1,22 @@
+[
+  {
+    "type": "file",
+    "name": "flink-kubernetes",
+    "label": "nav.quick-start.quick-start.flink-kubernetes"
+  },
+  {
+    "type": "file",
+    "name": "job_jar",
+    "label": "nav.quick-start.quick-start.job_jar"
+  },
+  {
+    "type": "file",
+    "name": "job_sql",
+    "label": "nav.quick-start.quick-start.job_sql"
+  },
+  {
+    "type": "file",
+    "name": "job_seatunnel",
+    "label": "nav.quick-start.quick-start.job_seatunnel"
+  }
+]

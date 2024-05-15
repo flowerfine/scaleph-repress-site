@@ -6,9 +6,12 @@
 
 ### SeaTunnel DAG 优化
 
-- 快捷键绑定。SeaTunnel 任务可视化编辑页面支持快捷键，粘贴复制、撤销等操作。无说明文档，用户无法了解相关功能，需在功能栏暴露这些功能，并添加提示
 - 增加每个 connector 的 icon 图标显示。增加页面显示效果
 - 修复 connector 的输入输出只能有一个的问题。即 SeaTunnel 的 source -> transform -> sink 只能支持单个。比如 jdbc cdc source 想同时发送至 kafka 和 doris，则需要创建 2 个一模一样的 jdbc cdc source，分别连接至 kafka sink 和 doris sink
+- connector 表单配置优化。现在把所有的配置信息都放在一个表单里面，用户第一眼看到会被大量的配置项搞懵掉。需要拆分
+  - 基本信息。数据源信息，基础配置
+  - 超时时间，数据同步批次，重试
+  - 高级配置。专家级别。
 
 ### 一键同步
 
@@ -23,17 +26,15 @@
 - 消息队列。如 Kafka，Pulsar。SeaTunnel 已支持。
 - CDC 数据（一般指数据库 binlog）。SeaTunnel 自身在开发 CDC 功能，已推出 Mysql-CDC connector。
 
-flink-cdc-connectors 提供了 CDC 数据和 Flink 的集成，项目成熟生产环境应用案例多，可考虑使用 SeaTunnel v1 connectors 对 flink-cdc-connectors 封装。
-
-- SeaTunnel 多引擎支持
-- SeaTunnel v1 connector 实现
-  - flink-cdc-connectors
-  - hudi
-  - iceberg
-
 ### Flink CDC
 
 Flink CDC 在 3.0 推出了实时数据集成功能，不只是 cdc source，也开始做 sink。
+
+支持 Flink CDC 是下一步计划
+
+## 数据湖支持
+
+支持 paimon
 
 ## 数据开发
 
@@ -78,13 +79,13 @@ Flink CDC 在 3.0 推出了实时数据集成功能，不只是 cdc source，也
 ## 数据源
 
 * web
-  * 数据源创建表单。优化数据源信息像后端发请求时，参数如何处理问题
-  * 数据源 icon
+  * 数据源创建表单。使用服务端的表单 json，自动创建表单。优化数据源信息像后端发请求时，参数如何处理问题
   * 数据源更新方式
   * 数据源额外认证文件。如 kerberos，hdfs 配置文件
 * 服务端
   * 数据源连通性测试
   * 数据源元数据
+    * 对接 gravitino
 
 ## 任务调度
 

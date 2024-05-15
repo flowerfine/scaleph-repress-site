@@ -40,7 +40,7 @@ git clone https://github.com/flowerfine/scaleph.git --depth 1
 - mysql
 - minio
 - [gravitino](https://github.com/datastrato/gravitino)。[小米下一代 Data AI 资产管理实践](https://www.infoq.cn/article/ZSGZr9BUkwMoxWLssDhJ)
-  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本支持 mysql 5.x 驱动，对 mysql 8.x 驱动有兼容问题。postgresql 与此同理
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0  版本mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。postgresql 与此同理
 
 
 其中 minio 作为文件存储中间件，可以使用 HDFS、OSS 以及 S3 代替。

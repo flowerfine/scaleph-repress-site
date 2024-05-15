@@ -32,7 +32,7 @@ git fetch origin 2.0.3
 git checkout 2.0.3
 
 # 将镜像 tag 从 latest 切换到 v2.0.3。latest 为开发中的最新版本
-# 
+# 注意替换 MINIO_ENDPOINT 中的 IP
 cd scaleph/tools/docker/deploy/scaleph
 
 # 下载依赖 && scaleph 组件

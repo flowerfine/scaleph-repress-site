@@ -2,7 +2,7 @@
 
 `scaleph` 功能开发计划
 
-## 2.0.3
+## 2.0.5
 
 * flink kubernetes 
   * 页面功能重构
@@ -16,7 +16,15 @@
   * 重构任务实例 & savepoint 关系
   * 页面按钮，状态调整
   * 任务完成后，增加延迟删除 deployment 功能
+* seatunnel
+  * 升级至 2.3.5 版本
+  * 调试部分 connector，提供内置 demo
+    * jdbc，kafka，es，doris
 * flink cdc
   * 增加 flink cdc dag
 * dag
-  * 提供通用 dag 模块，服务 seatunnel、flink-cdc 以及未来的调度系统
+  * 持续优化 workflow dag
+  * 添加 workflow dag 页面
+* 监控、可视化、告警
+  * 依据 prometheus，grafana 和 alert-manager 搭建云原生告警方式
+  * 依据 scaleph 服务端定时轮训/监听资源变动状态，告警方式

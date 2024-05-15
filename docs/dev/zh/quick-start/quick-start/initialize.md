@@ -10,9 +10,13 @@
 
 `scaleph` 支持多集群部署，用户可以将 Flink 或 SeaTunnel 任务部署至多个 Kubernetes 集群。
 
-==使用时需注意 Kubernetes 集群和 MySQL、Redis、Minio 以及 Gravitino 的网络是否连通。==如果使用 docker 在本地启动的 MySQL、Redis、Minio 和 Gravitino，地址都是 `localhost` 或 `127.0.0.1`。如果 Kubernetes 集群不是本地如远程服务器上的开发集群，任务运行在 Kubernetes 中尝试通过  `localhost` 或 `127.0.0.1` 访问 MySQL、Redis、Minio 和 Gravitino 服务就会出现连接失败问题。
+**使用时需注意 Kubernetes 集群和 MySQL、Redis、Minio 以及 Gravitino 的网络是否连通。**如果使用 docker 在本地启动的 MySQL、Redis、Minio 和 Gravitino，地址都是 `localhost` 或 `127.0.0.1`。如果 Kubernetes 集群不是本地如远程服务器上的开发集群，任务运行在 Kubernetes 中尝试通过  `localhost` 或 `127.0.0.1` 访问 MySQL、Redis、Minio 和 Gravitino 服务就会出现连接失败问题。
+
+尤其是在启动 `scaleph-api` 时，需注意 Minio 的地址。采用 `docker-compose` 一键启动时，需注意替换 `MINIO_ENDPOINT` 中的 ip 或 port，保证网络能正常访问。
 
 用户需上传 Kubernetes 集群 kubeconfig 文件，kubeconfig 文件一般位于 `$HOME/.kube/config`。通过 kubeconfig， `scaleph` 可以连接对应 Kubernetes 集群，提交任务。
+
+注意验证 kubeconfig 文件是可用的，上传前可以使用 `kubectl version --kubeconfig=path/to/kubeconfig` 进行验证。如果采用 docker desktop 的 kubernetes，Flink 或 Doris 集群因为网络问题无法提交或创建，可以尝试修改 kubeconfig 文件中的 `server`
 
 从 `资源` -> `Cluster Credential` -> `新增`进入上传页面：
 

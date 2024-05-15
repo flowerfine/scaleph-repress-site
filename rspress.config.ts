@@ -11,7 +11,7 @@ export default defineConfig({
     lang: 'zh',
     multiVersion: {
         default: 'dev',
-        versions: ['dev', '2.0.3', '2.0.2', '2.0.1', '2.0.0'],
+        versions: ['dev', '2.0.4', '2.0.3', '2.0.2', '2.0.1'],
     },
     themeConfig: {
         lastUpdated: true,
