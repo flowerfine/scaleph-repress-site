@@ -4,6 +4,7 @@
 
 * `ServiceMonitor`。通过 `Service` 采集
 * `PodMonitor`。采集 `Pod`
+* 参考：[kube-prometheus-stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
 
 ## 安装
 
