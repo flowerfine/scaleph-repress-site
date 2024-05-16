@@ -11,6 +11,9 @@
 安装 prometheus operator
 
 ```shell
+## scaleph 在 tools/kubernetes/grafana/values-prometheus-operator.yaml 中定制了开发、测试环境使用的 prometheus-operator 配置
+## 生产环境中可以考虑使用 kubernetes 统一的 prometheus-operator 或者独立于 kubernetes 部署的 prometheus 实例，只需配置采集 kubernetes 中的 flink pods 的 metrics 即可
+
 helm upgrade --install prometheus-operator kube-prometheus-stack \
     --repo https://prometheus-community.github.io/helm-charts \
     --values tools/kubernetes/prometheus/values-prometheus-operator.yaml
@@ -32,6 +35,25 @@ helm upgrade --install prometheus-operator kube-prometheus-stack \
   * 禁用 AlertManager。`--set alertmanager.enabled=false`
 
   * 禁用 Grafana。`--set grafana.enabled=false`
+
+访问 prometheus 和 alert-manager
+
+```shell
+## tools/kubernetes/grafana/values-prometheus-operator.yaml 默认通过 NodePort 方式暴露了 prometheus 和 alert-manager 实例 端口
+## 通过 http://${IP}:${PORT} 访问 prometheus 或 alert-manager
+## IP 为 Kubernetes 节点的 IP 地址，本地则为 localhost 或 127.0.0.1
+## 查看 prometheus 实例端口号
+kubectl get services prometheus-operator-kube-p-prometheus
+## 返回如下结果，端口号即为：30090
+## NAME                                    TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)                         AGE
+## prometheus-operator-kube-p-prometheus   NodePort   10.98.170.125   <none>        9090:30090/TCP,8080:30710/TCP   18h
+
+## 查看 alert-manager 实例端口号
+kubectl get services prometheus-operator-kube-p-alertmanager
+## 返回如下结果，端口号即为：30090
+## NAME                                      TYPE       CLUSTER-IP    EXTERNAL-IP   PORT(S)                         AGE
+## prometheus-operator-kube-p-alertmanager   NodePort   10.111.2.15   <none>        9093:30903/TCP,8080:30546/TCP   18h
+```
 
 卸载 prometheus operator
 
