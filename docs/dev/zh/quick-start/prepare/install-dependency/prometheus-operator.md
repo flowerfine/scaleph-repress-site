@@ -11,7 +11,7 @@
 安装 prometheus operator
 
 ```shell
-## scaleph 在 tools/kubernetes/grafana/values-prometheus-operator.yaml 中定制了开发、测试环境使用的 prometheus-operator 配置
+## scaleph 在 tools/kubernetes/prometheus/values-prometheus-operator.yaml 中定制了开发、测试环境使用的 prometheus-operator 配置
 ## 生产环境中可以考虑使用 kubernetes 统一的 prometheus-operator 或者独立于 kubernetes 部署的 prometheus 实例，只需配置采集 kubernetes 中的 flink pods 的 metrics 即可
 
 helm upgrade --install prometheus-operator kube-prometheus-stack \
@@ -39,7 +39,7 @@ helm upgrade --install prometheus-operator kube-prometheus-stack \
 访问 prometheus 和 alert-manager
 
 ```shell
-## tools/kubernetes/grafana/values-prometheus-operator.yaml 默认通过 NodePort 方式暴露了 prometheus 和 alert-manager 实例 端口
+## tools/kubernetes/prometheus/values-prometheus-operator.yaml 默认通过 NodePort 方式暴露了 prometheus 和 alert-manager 实例 端口
 ## 通过 http://${IP}:${PORT} 访问 prometheus 或 alert-manager
 ## IP 为 Kubernetes 节点的 IP 地址，本地则为 localhost 或 127.0.0.1
 ## 查看 prometheus 实例端口号
