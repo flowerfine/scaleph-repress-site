@@ -1,6 +1,8 @@
 # Grafana Operator
 
+参考文档
 
+* [Grafana 高可用部署最佳实践](https://mp.weixin.qq.com/s/wv3dEM7BYMwKuiNd5ikuHQ)
 
 ## 安装
 

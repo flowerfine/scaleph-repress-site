@@ -2,9 +2,10 @@
 
 通过 prometheus operator 采集监控指标：
 
-* `ServiceMonitor`。通过 `Service` 采集
-* `PodMonitor`。采集 `Pod`
 * 参考：[kube-prometheus-stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
+* [Prometheus 基于 Pod 和 Service 注解的服务发现](https://mp.weixin.qq.com/s/6uxkCJ6Mb3U8j5h9XceZUQ)
+  * `ServiceMonitor`。通过 `Service` 采集
+  * `PodMonitor`。采集 `Pod`
 
 ## 安装
 
