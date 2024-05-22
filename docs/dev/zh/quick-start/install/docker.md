@@ -27,11 +27,11 @@
 ```shell
 # clone scaleph 源码
 git clone https://github.com/flowerfine/scaleph.git --depth 1
-# 切换到 2.0.4 分支
-git fetch origin 2.0.4
-git checkout 2.0.4
+# 切换到 2.0.5 分支
+git fetch origin 2.0.5
+git checkout 2.0.5
 
-# 将镜像 tag 从 latest 切换到 v2.0.4。latest 为开发中的最新版本
+# 将镜像 tag 从 latest 切换到 v2.0.5。latest 为开发中的最新版本
 # 注意替换 MINIO_ENDPOINT 中的 IP
 cd scaleph/tools/docker/deploy/scaleph
 

@@ -22,9 +22,10 @@
    
    # 安装 flink-kubernetes-operator
    helm repo add flink-kubernetes-operator-1.8.0 https://archive.apache.org/dist/flink/flink-kubernetes-operator-1.8.0/
-   # 修改 flink 镜像仓库为 apache/flink-kubernetes-operator
-   # 默认是从 github packages 下载，从 github 下载比较慢，换成 dockerhub 
-   helm install flink-kubernetes-operator flink-kubernetes-operator-1.8.0/flink-kubernetes-operator --set webhook.create=false --set image.repository=apache/flink-kubernetes-operator
+   
+   # scaleph 对 flink-kubernetes-operator 的默认配置进行了一定程度调整，用户需应用 ${SCALEPH_HOME}/tools/kubernetes/flink/values.yaml 调整
+   # 用户 clone 对应部署版本的 scaleph 分支代码，或使用 https://github.com/flowerfine/scaleph/blob/dev/tools/kubernetes/flink/values.yaml
+   helm install flink-kubernetes-operator flink-kubernetes-operator-1.8.0/flink-kubernetes-operator --values tools/kubernetes/flink/values.yaml
    
    # 查看安装状态
    kubectl get deployment

@@ -14,11 +14,11 @@
 拉取镜像
 
 * `scaleph` 系统镜像
-  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-api:v2.0.4`
-  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-ui-react:v2.0.4`
-  * `docker pull ghcr.io/flowerfine/scaleph/mysql:v2.0.4`
+  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-api:v2.0.5`
+  * `docker pull ghcr.io/flowerfine/scaleph/scaleph-ui-react:v2.0.5`
+  * `docker pull ghcr.io/flowerfine/scaleph/mysql:v2.0.5`
 * `scaleph` 依赖镜像
-  * `docker pull bitnami/mysql:8.0`。与 `ghcr.io/flowerfine/scaleph/mysql:v2.0.4` 功能重叠，`ghcr.io/flowerfine/scaleph/mysql:v2.0.4` 内置了 scaleph 初始 sql。
+  * `docker pull bitnami/mysql:8.0`。与 `ghcr.io/flowerfine/scaleph/mysql:v2.0.5` 功能重叠，`ghcr.io/flowerfine/scaleph/mysql:v2.0.5` 内置了 scaleph 初始 sql。
   * `docker pull bitnami/redis:7.0.10`
   * `docker pull bitnami/minio:2023.3.24`
   * `docker pull datastrato/gravitino:0.5.0`

@@ -33,6 +33,7 @@
     - Flink 管理。与 [Flink Kubernetes Operator](https://nightlies.apache.org/flink/flink-kubernetes-operator-docs-stable/) 深度集成，以 operator 模式提供了 Template -> Session-Cluster、Deployment -> Job 的 Flink 任务层级管理。 
     - Jar 任务管理。上传基于 Flink DataStream  和 Table API 开发的 jar 包。
     - SQL 任务管理、在线开发。在线 Flink SQL 编辑器，基于 [SQL Gateway](https://nightlies.apache.org/flink/flink-docs-release-1.18/docs/dev/table/sql-gateway/overview/) 提供在线调试、运行。
+    - Prometheus 采集 Flink metrics，Grafana 可视化展示
   - Doris 集群运维
     - 集成 [doris-operator](https://github.com/selectdb/doris-operator)，提供 Doris on k8s 部署能力。
 - 元数据。

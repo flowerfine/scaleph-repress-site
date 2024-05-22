@@ -1,0 +1,13 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.guide.seatunnel.index"
+  },
+  {
+    "type": "dir",
+    "name": "connector",
+    "collapsed": true,
+    "label": "nav.guide.seatunnel.connector"
+  }
+]

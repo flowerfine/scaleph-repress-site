@@ -135,6 +135,26 @@
     "zh": "使用指南",
     "en": "Guide"
   },
+  "nav.guide.flink-kubernetes-operator": {
+    "zh": "Flink Kubernetes Operator",
+    "en": "Flink Kubernetes Operator"
+  },
+  "nav.guide.flink": {
+    "zh": "Flink",
+    "en": "Flink"
+  },
+  "nav.guide.seatunnel": {
+    "zh": "SeaTunnel",
+    "en": "SeaTunnel"
+  },
+  "nav.guide.seatunnel.index": {
+    "zh": "介绍",
+    "en": "Index"
+  },
+  "nav.guide.seatunnel.connector": {
+    "zh": "Connector",
+    "en": "Connector"
+  },
   "nav.guide.doris": {
     "zh": "Doris",
     "en": "Doris"
