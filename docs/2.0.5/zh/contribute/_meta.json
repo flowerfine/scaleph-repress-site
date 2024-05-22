@@ -1,0 +1,32 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.contribute.index"
+  },
+  {
+    "type": "file",
+    "name": "develop",
+    "label": "nav.contribute.develop"
+  },
+  {
+    "type": "file",
+    "name": "sourcecode",
+    "label": "nav.contribute.sourcecode"
+  },
+  {
+    "type": "file",
+    "name": "docker",
+    "label": "nav.contribute.docker"
+  },
+  {
+    "type": "file",
+    "name": "cicd",
+    "label": "nav.contribute.cicd"
+  },
+  {
+    "type": "file",
+    "name": "contribute",
+    "label": "nav.contribute.contribute"
+  }
+]

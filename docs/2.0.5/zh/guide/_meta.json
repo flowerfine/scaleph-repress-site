@@ -1,0 +1,31 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.guide.index"
+  },
+  {
+    "type": "dir",
+    "name": "flink-kubernetes-operator",
+    "collapsed": true,
+    "label": "nav.guide.flink-kubernetes-operator"
+  },
+  {
+    "type": "dir",
+    "name": "flink",
+    "collapsed": true,
+    "label": "nav.guide.flink"
+  },
+  {
+    "type": "dir",
+    "name": "seatunnel",
+    "collapsed": true,
+    "label": "nav.guide.seatunnel"
+  },
+  {
+    "type": "dir",
+    "name": "doris",
+    "collapsed": true,
+    "label": "nav.guide.doris"
+  }
+]
