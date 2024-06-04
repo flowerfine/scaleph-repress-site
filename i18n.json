@@ -31,6 +31,10 @@
     "zh": "Docker",
     "en": "Docker"
   },
+  "nav.quick-start.prepare.docker.proxy": {
+    "zh": "代理",
+    "en": "Proxy"
+  },
   "nav.quick-start.prepare.kubernetes": {
     "zh": "Kubernetes",
     "en": "Kubernetes"
