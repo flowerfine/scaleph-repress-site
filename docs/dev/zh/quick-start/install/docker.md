@@ -2,8 +2,8 @@
 
 `scaleph` 产出为镜像，部署方式以 docker 为主。镜像发布在 github packages 中，网络不畅情况下，可通过：
 
-* 科学上网
-* 本地下载镜像上传到部署服务器
+* [设置代理](../prepare/docker/proxy)。需要科学上网工具
+* [导入镜像](../prepare/docker/export&import)。在网络好的地方下载镜像，导出镜像为压缩文件，传输到服务器，从压缩文件中导入镜像
 * 本地编译镜像
 
 ## docker

@@ -35,6 +35,10 @@
     "zh": "代理",
     "en": "Proxy"
   },
+  "nav.quick-start.prepare.docker.export&import": {
+    "zh": "导入&导出",
+    "en": "Export & Import"
+  },
   "nav.quick-start.prepare.kubernetes": {
     "zh": "Kubernetes",
     "en": "Kubernetes"
