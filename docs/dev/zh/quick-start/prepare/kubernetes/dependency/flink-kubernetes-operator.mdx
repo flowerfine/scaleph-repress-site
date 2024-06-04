@@ -24,7 +24,8 @@
    helm repo add flink-kubernetes-operator-1.8.0 https://archive.apache.org/dist/flink/flink-kubernetes-operator-1.8.0/
    
    # scaleph 对 flink-kubernetes-operator 的默认配置进行了一定程度调整，用户需应用 ${SCALEPH_HOME}/tools/kubernetes/flink/values.yaml 调整
-   # 用户 clone 对应部署版本的 scaleph 分支代码，或使用 https://github.com/flowerfine/scaleph/blob/dev/tools/kubernetes/flink/values.yaml
+   # tools/kubernetes/flink/values.yaml 不支持 FlinkSessionJob 任务
+   # tools/kubernetes/flink/values-session.yaml 替换 http://${IP}:9000 中 IP 为真实的 Minio 地址后，支持 FlinkSessionJob 任务
    helm install flink-kubernetes-operator flink-kubernetes-operator-1.8.0/flink-kubernetes-operator --values tools/kubernetes/flink/values.yaml
    
    # 查看安装状态
@@ -63,6 +64,12 @@
    ```shell
    kubectl delete flinkdeployment/basic-example
    ```
+
+:::tip
+
+`tools/kubernetes/flink/values.yaml` 是未启用 Flink [FileSystem](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/filesystems/overview/) 插件的，不支持 `FlinkSessionJob` 任务。欲支持 `FlinkSessionJob` 任务，请使用 `tools/kubernetes/flink/values-session.yaml`。使用前需替换 `tools/kubernetes/flink/values-session.yaml` 中的 `s3.endpoint: http://${IP}:9000` 中的 `IP` 变量为真实的 Minio 地址
+
+:::
 
 ## Ingress
 
