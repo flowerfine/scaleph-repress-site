@@ -11,6 +11,11 @@
   },
   {
     "type": "file",
+    "name": "trial",
+    "label": "nav.quick-start.trial"
+  },
+  {
+    "type": "file",
     "name": "requirement",
     "label": "nav.quick-start.requirement"
   },
@@ -18,6 +23,12 @@
     "type": "dir",
     "name": "prepare",
     "label": "nav.quick-start.prepare"
+  },
+  {
+    "type": "dir",
+    "name": "compile",
+    "collapsed": true,
+    "label": "nav.quick-start.compile"
   },
   {
     "type": "dir",

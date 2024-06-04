@@ -11,6 +11,10 @@
     "zh": "项目初衷",
     "en": "Why"
   },
+  "nav.quick-start.trial": {
+    "zh": "试用环境",
+    "en": "Trial"
+  },
   "nav.quick-start.requirement": {
     "zh": "前置需求",
     "en": "Requirement"
@@ -23,6 +27,10 @@
     "zh": "说明",
     "en": "Index"
   },
+  "nav.quick-start.prepare.docker": {
+    "zh": "Docker",
+    "en": "Docker"
+  },
   "nav.quick-start.prepare.kubernetes": {
     "zh": "Kubernetes",
     "en": "Kubernetes"
@@ -31,39 +39,31 @@
     "zh": "说明",
     "en": "Index"
   },
-  "nav.quick-start.prepare.kubernetes.docker-desktop": {
-    "zh": "Docker Desktop",
-    "en": "Docker Desktop"
+  "nav.quick-start.prepare.kubernetes.install": {
+    "zh": "安装",
+    "en": "Install"
   },
-  "nav.quick-start.prepare.kubernetes.minikube": {
-    "zh": "Minikube",
-    "en": "Minikube"
+  "nav.quick-start.prepare.kubernetes.dependency": {
+    "zh": "依赖",
+    "en": "Dependency"
   },
-  "nav.quick-start.prepare.kubernetes.k3s": {
-    "zh": "K3s",
-    "en": "K3s"
-  },
-  "nav.quick-start.prepare.install-dependency": {
-    "zh": "安装依赖",
-    "en": "Install Dependency"
-  },
-  "nav.quick-start.prepare.install-dependency.prometheus-operator": {
+  "nav.quick-start.prepare.kubernetes.dependency.prometheus-operator": {
     "zh": "Prometheus Operator",
     "en": "Prometheus Operator"
   },
-  "nav.quick-start.prepare.install-dependency.grafana-operator": {
+  "nav.quick-start.prepare.kubernetes.dependency.grafana-operator": {
     "zh": "Grafana Operator",
     "en": "Grafana"
   },
-  "nav.quick-start.prepare.install-dependency.nginx-ingress-controller": {
+  "nav.quick-start.prepare.kubernetes.dependency.nginx-ingress-controller": {
     "zh": "Nginx Ingress Controller",
     "en": "Nginx Ingress Controller"
   },
-  "nav.quick-start.prepare.install-dependency.flink-kubernetes-operator": {
+  "nav.quick-start.prepare.kubernetes.dependency.flink-kubernetes-operator": {
     "zh": "Flink Kubernetes Operator",
     "en": "Flink Kubernetes Operator"
   },
-  "nav.quick-start.prepare.install-dependency.doris-operator": {
+  "nav.quick-start.prepare.kubernetes.dependency.doris-operator": {
     "zh": "Doris Operator",
     "en": "Doris Operator"
   },
@@ -82,10 +82,6 @@
   "nav.quick-start.install.docker": {
     "zh": "Docker 安装",
     "en": "Docker Install"
-  },
-  "nav.quick-start.install.compile": {
-    "zh": "编译",
-    "en": "Compile"
   },
   "nav.quick-start.quick-start": {
     "zh": "快速开始",

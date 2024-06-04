@@ -5,18 +5,15 @@
     "label": "nav.quick-start.prepare.kubernetes.index"
   },
   {
-    "type": "file",
-    "name": "docker-desktop",
-    "label": "nav.quick-start.prepare.kubernetes.docker-desktop"
+    "type": "dir",
+    "name": "install",
+    "collapsed": true,
+    "label": "nav.quick-start.prepare.kubernetes.install"
   },
   {
-    "type": "file",
-    "name": "minikube",
-    "label": "nav.quick-start.prepare.kubernetes.minikube"
-  },
-  {
-    "type": "file",
-    "name": "k3s",
-    "label": "nav.quick-start.prepare.kubernetes.k3s"
+    "type": "dir",
+    "name": "dependency",
+    "collapsed": false,
+    "label": "nav.quick-start.prepare.kubernetes.dependency"
   }
 ]

@@ -1,10 +1,5 @@
 # 说明
 
-## 试用地址
-
-* [scaleph](http://129.204.156.150:8096)。使用 `sys_admin`/`123456` 登陆。服务器资源有限，若无法访问，请联系 `kalencaya`
-* [doc.html](http://129.204.156.150:8080/scaleph/doc.html)。`scaleph-api` 服务端 OpenAPI 地址
-
 ## 部署准备
 
 * 准备容器和 kubernetes 环境
@@ -15,6 +10,5 @@
   * Prometheus Operator。`scaleph` 不依赖，推荐安装
   * Grafana Operator。`scaleph` 不依赖，推荐安装
   * Nginx Ingress Controller
-  * Flink Kubernetes Operator
-  * Doris Operator
-
+  * Flink Kubernetes Operator。体验 `Flink` 任务如 `Jar`、`SQL`、`SeaTunnel`（Flink 引擎）需安装
+  * Doris Operator。体验 `Doris` 需安装

@@ -6,14 +6,14 @@
   },
   {
     "type": "dir",
-    "name": "kubernetes",
+    "name": "docker",
     "collapsed": true,
-    "label": "nav.quick-start.prepare.kubernetes"
+    "label": "nav.quick-start.prepare.docker"
   },
   {
     "type": "dir",
-    "name": "install-dependency",
+    "name": "kubernetes",
     "collapsed": true,
-    "label": "nav.quick-start.prepare.install-dependency"
+    "label": "nav.quick-start.prepare.kubernetes"
   }
 ]
