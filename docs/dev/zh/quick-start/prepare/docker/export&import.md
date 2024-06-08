@@ -4,13 +4,13 @@
 
 ## 查看镜像
 
-```shell
+```bash
 docker image ls
 ```
 
 ## 导出镜像
 
-```shell
+```bash
 # 查看命令手册
 docker image save -h
 
@@ -20,11 +20,10 @@ docker image -o scaleph-api.tgz ghcr.io/flowerfine/scaleph/scaleph-api:vxx.yy.zz
 
 ## 导入镜像
 
-```shell
+```bash
 # 查看命令手册
 docker image load -h
 
 # 导入镜像
 docker docker image load -i scaleph-api.tgz
 ```
-
