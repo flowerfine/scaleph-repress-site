@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "index",
+    "label": "nav.quick-start.compile.index"
+  },
+  {
+    "type": "file",
+    "name": "compile",
+    "label": "nav.quick-start.compile.compile"
+  }
+]

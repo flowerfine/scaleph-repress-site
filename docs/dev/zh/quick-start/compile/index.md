@@ -1,119 +1,90 @@
-# 编译
-不同的编译方式和环境可能会获得不同的编译结果，甚至会编译失败！`scaleph` 拥有多个编译场景：
-
-- 本地 IDE 开发。
-- 基于 github actions 的 [CI](https://github.com/flowerfine/scaleph/blob/dev/.github/workflows/ci.yml) 流程。
-- 基于 github actions 的 [CD](https://github.com/flowerfine/scaleph/blob/dev/.github/workflows/docker-release.yml) 流程。
-
-`scaleph` 确保 3 个场景的编译环境、命令和结果的一致性，保证了开发者本地开发效果，CI/CD 流程都是可信的。
-
-当开发者需要手动编译项目时，可以参考此文档。
-
-## 编译
-
-### 机器本地编译
+# 环境
 
 开发者需安装如下环境：
 
 - [JDK](https://adoptium.net/zh-CN/temurin/archive/)。下载并安装 open JDK 17。
+  - [Maven](https://maven.apache.org/download.cgi)。下载并安装 maven，推荐 `3.9.7` 版本
 - [Node](https://nodejs.org/en/download/releases/)。下载并安装 Node 16。
 - [Docker](https://docs.docker.com/get-docker/)。下载并安装 Docker，已有 Docker 环境时，使用 `docker version` 和 `docker compose version` 检查对应的版本，更新为最新版本。
 
-```shell
-# 编译服务端。编译完成后，可以在 scaleph-api/target/scaleph-api.jar
-./mvnw -B -U -T 4 clean package -DskipTests -Dfast -am --projects scaleph-api
+## JDK
 
-# 启动服务端
-# 参考 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-api/Dockerfile
+### Mac & Linux
 
-# 编译前端
-# 安装依赖。如果网络不好，可以配置国内 npm 包镜像源
-npm install --force
-# 执行编译。编译完成后，可以在 scaleph-ui-react/dist 目录获取编译结果
-npm run build --prod
-# 启动前端
-# 参考 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-ui-react/Dockerfile
-# nginx 配置参数 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-ui-react/nginx.conf.template
-```
+1. 下载 [JDK](https://adoptium.net/zh-CN/temurin/archive/)。`scaleph` 需 JDK 17。下载分为 **二进制** 和 **安装器**，Mac 和 Windows 用户可选择 **安装器** 下载。不同项目使用不同版本的 JDK，推荐同时安装 JDK 11、17、21 等长期支持版本，配置多版本管理。
 
-### 容器内编译
+2. 安装。
 
-通过容器内编译，可以统一编译环境，无需用户准备对应版本的 JDK 和 Node，避免 `scaleph` 在本地开发、CI 环节和二次开发编译打包因为环境问题导致行为不一致。
+3. 配置多版本管理。在 `.bash_profile` 中添加如下配置，设置 `JAVA_HOME` 和快速切换 JDK 版本命令
 
-类似的参考：
+   ```shell
+   ## 配置环境变量
+   export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+   export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
+   
+   ## JAVA_HOME
+   export JAVA_HOME=$JAVA_17_HOME
+   
+   ## 切换 JDK 版本命令
+   alias java11="export JAVA_HOME=$JAVA_11_HOME"
+   alias java17="export JAVA_HOME=$JAVA_17_HOME"
+   
+   ## 验证。使用 java -version 查看当前生效的 JDK 信息
+   java -version
+   
+   ## 切换版本至 JDK 11
+   java11
+   ## 切换版本至 JDK 17
+   java17
+   ```
 
-* doris。[使用 Docker 开发镜像编译（推荐）](https://doris.apache.org/zh-CN/docs/install/source-install/compilation-with-docker)
-* ranger。[build_ranger_using_docker.sh](https://github.com/apache/ranger/blob/master/build_ranger_using_docker.sh)
+### Windows
 
-开发者需安装如下环境：
+参考：[轻松管理多版本JDK：从1.8到11和17的无缝切换指南](https://mp.weixin.qq.com/s?__biz=Mzk0NzQwMzgxNQ==&mid=2247486717&idx=1&sn=9f3f314dc13f643a3e029bb5df942bdf&chksm=c37621b5f401a8a3fd9e36d9ca63b1bc4597d2f392cef3200ec3a1cdd1a933275355cc092e7c&mpshare=1&scene=1&srcid=0611NoypwokdXVO2KgUGudcx&sharer_shareinfo=c1703af4802db14696e2ab3e4c655342&sharer_shareinfo_first=20abd686207264467ebbb23f1caa40dc&version=4.1.10.99312&platform=mac&nwr_flag=1#wechat_redirect)
 
-- [Docker](https://docs.docker.com/get-docker/)。下载并安装 Docker，已有 Docker 环境时，使用 `docker version` 和 `docker compose version` 检查对应的版本，更新为最新版本。
+## Maven
 
-```shell
-# 编译服务端
-docker run -it --rm \
---name scaleph-api-build \
--v "$(pwd)":/usr/src/mymaven \
--w /usr/src/mymaven \
-maven:3.8-eclipse-temurin-11 \
-mvn -B -U -T 4 clean package -DskipTests -Dfast -am --projects scaleph-api
+### Mac & Linux
 
-# 启动服务端
-# 参考 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-api/Dockerfile
+1. 下载 [maven](https://maven.apache.org/download.cgi)。推荐 `3.9.7` 版本
 
-# 编译前端
-# 安装依赖
-docker run -it --rm \
---name scaleph-ui-react-build \
--v "$(pwd)/scaleph-ui-react":/usr/src/mymaven \
--w /usr/src/mymaven/ \
-node:16 \
-npm install --force
-# 编译
-docker run -it --rm \
---name scaleph-ui-react-build \
--v "$(pwd)/scaleph-ui-react":/usr/src/mymaven \
--w /usr/src/mymaven/ \
-node:16 \
-npm run build --prod
-# 启动前端
-# 参考 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-ui-react/Dockerfile
-# nginx 配置参数 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-ui-react/nginx.conf.template
-```
+2. 安装。将下载的安装包解压，放在某个目录即可。需记住存放路径：`/path/to/your_maven`
 
-## 镜像制作
+3. 配置环境变量。
 
-`scaleph` 基于 Docker 提供快速的开发和测试运行环境，本文将介绍如何在本地构建镜像。
+   ```shell
+   ## 配置环境变量
+   export M2_HOME=/path/to/your_maven
+   export PATH=$PATH:$M2_HOME/bin
+   
+   ## 验证
+   mvn -v
+   ```
 
-在 `$SCALEPH_HOME/tools/docker/build` 目录下有 `docker-compose-build-api.yml` 和 `docker-compose-build-ui.yml`文件，分别用于构建 `scaleph-api` 和 `scaleph-ui-react` 模块。docker compose 中添加了程序运行依赖的 `mysql`、`redis` 、`minio` 等环境。
+4. 配置 maven。编辑 `$user_home/.m2/settings.xml` 文件
 
-```shell
-# clone 源码
-git clone https://github.com/flowerfine/scaleph.git
-cd scaleph/tools/docker/build/scaleph
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+     <!-- 在本地指定文件目录，存储本地 jar 包。可不指定，默认存储在 $user_home/.m2/repository  -->
+     <localRepository>/path/to/local_repository</localRepository>
+   
+     <!-- 配置阿里云 maven 仓库镜像  -->
+     <mirrors>
+       <mirror>
+         <id>nexus-aliyun</id>
+         <mirrorOf>central</mirrorOf>
+         <name>Nexus aliyun</name>
+         <url>https://maven.aliyun.com/repository/central</url>
+       </mirror>
+     </mirrors>
+   </settings>
+   ```
 
-# 编译 scaleph-api 镜像
-docker compose -f docker-compose-build-api.yml build
-# 测试 scaleph-api 镜像编译结果
-docker compose -f docker-compose-build-api.yml up -d
+## Node
 
-# 编译 scaleph-ui-react 镜像
-docker compose -f docker-compose-build-ui.yml build
-# 测试 scaleph-ui-react 镜像编译结果
-docker compose -f docker-compose-build-ui.yml up -d
-```
+待补充
 
-### 安装包编译
+## Docker
 
-请先参照前文安装本地编译环境。
-
-```shell
-# clone 源码
-git clone https://github.com/flowerfine/scaleph.git
-cd scaleph
-
-# 开始编译
-mvn -U -B -T 4 clean package -Pdist -DskipTests -Dfast
-```
-
-编译完成后在`scaleph-dist/target`下生成后缀为`.tar.gz`的安装包。
+待补充
