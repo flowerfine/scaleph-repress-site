@@ -53,9 +53,21 @@ http://127.0.0.1:$PORT
 }
 ```
 
-docker desktop 配置如下：
+对于 `Mac` 和 `Windows` 用户，可以通过 docker desktop 进行配置：
 
 ![proxy_docker_daemon](./image/docker/proxy_docker_daemon.jpg)
+
+对于 `Linux` 用户，编辑 `daemon.json` 文件，没有则新建：
+
+```shell
+vim /etc/docker/daemon.json
+
+## 在将代理镜像仓库地址，添加到 `daemon.json` 即可
+
+## 添加完毕后，重启 docker
+systemctl restart docker
+systemctl status docker
+```
 
 查看配置更改是否成功：
 
