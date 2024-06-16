@@ -52,6 +52,15 @@ curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
 	K3S_KUBECONFIG_OUTPUT=/root/.kube/config \
 	INSTALL_K3S_EXEC="--node-external-ip=myip" \
 	sh -
+
+# 如果发现拉取 rancher k3s 和 docker 镜像异常，可以修改配置，切换下载地址
+curl -sfL https://rancher-mirror.oss-cn-beijing.aliyuncs.com/k3s/k3s-install.sh | \
+	INSTALL_K3S_MIRROR=cn \
+	INSTALL_K3S_MIRROR_URL=rancher-mirror.oss-cn-beijing.aliyuncs.com \
+	INSTALL_K3S_VERSION=v1.26.8+k3s1 \
+	K3S_KUBECONFIG_OUTPUT=/root/.kube/config \
+	INSTALL_K3S_EXEC="--node-external-ip=myip --system-default-registry=registry.cn-hangzhou.aliyuncs.com" \
+	sh -
 ```
 
 ### 新增 agent
@@ -79,6 +88,17 @@ curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIR
 # 增加 agent 节点，注意替换 mynodetoken、myserver 和 myip
 curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
 	INSTALL_K3S_MIRROR=cn \
+	INSTALL_K3S_VERSION=v1.26.8+k3s1 \
+	K3S_URL=https://myserver:6443 \
+	K3S_TOKEN=mynodetoken \
+	INSTALL_K3S_EXEC="--node-external-ip=myip" \
+	sh -
+
+# 如果发现拉取 rancher k3s 和 docker 镜像异常，可以修改配置，切换下载地址
+# 无需添加 --system-default-registry=registry.cn-hangzhou.aliyuncs.com
+curl -sfL https://rancher-mirror.oss-cn-beijing.aliyuncs.com/k3s/k3s-install.sh | \
+	INSTALL_K3S_MIRROR=cn \
+	INSTALL_K3S_MIRROR_URL=rancher-mirror.oss-cn-beijing.aliyuncs.com \
 	INSTALL_K3S_VERSION=v1.26.8+k3s1 \
 	K3S_URL=https://myserver:6443 \
 	K3S_TOKEN=mynodetoken \
