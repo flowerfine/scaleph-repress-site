@@ -61,6 +61,15 @@ curl -sfL https://rancher-mirror.oss-cn-beijing.aliyuncs.com/k3s/k3s-install.sh 
 	K3S_KUBECONFIG_OUTPUT=/root/.kube/config \
 	INSTALL_K3S_EXEC="--node-external-ip=myip --system-default-registry=registry.cn-hangzhou.aliyuncs.com" \
 	sh -
+
+# 如果发现卡在下载 docker ce，需要更换 linux 的软件源
+# centos 系统
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+# ubuntu
+# 安装GPG证书
+curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+# 写入软件源信息
+sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
 ### 新增 agent
