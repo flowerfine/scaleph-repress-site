@@ -212,8 +212,16 @@
     "en": "Overview"
   },
   "nav.contribute.develop": {
-    "zh": "开发环境",
+    "zh": "本地开发",
     "en": "Develop"
+  },
+  "nav.contribute.develop.env": {
+    "zh": "准备环境",
+    "en": "Environment"
+  },
+  "nav.contribute.develop.bootstrap": {
+    "zh": "启动项目",
+    "en": "Bootstrap"
   },
   "nav.contribute.sourcecode": {
     "zh": "项目源码",
@@ -223,9 +231,9 @@
     "zh": "Docker",
     "en": "Docker"
   },
-  "nav.contribute.cicd": {
-    "zh": "CI/CD",
-    "en": "CI/CD"
+  "nav.contribute.compile": {
+    "zh": "编译",
+    "en": "Compile"
   },
   "nav.contribute.contribute": {
     "zh": "如何贡献",

@@ -25,9 +25,8 @@
     "label": "nav.quick-start.prepare"
   },
   {
-    "type": "dir",
+    "type": "file",
     "name": "compile",
-    "collapsed": true,
     "label": "nav.quick-start.compile"
   },
   {

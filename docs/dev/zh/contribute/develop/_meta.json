@@ -1,0 +1,12 @@
+[
+  {
+    "type": "file",
+    "name": "env",
+    "label": "nav.contribute.develop.env"
+  },
+  {
+    "type": "file",
+    "name": "bootstrap",
+    "label": "nav.contribute.develop.bootstrap"
+  }
+]
