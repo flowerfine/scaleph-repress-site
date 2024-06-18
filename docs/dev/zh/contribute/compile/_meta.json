@@ -1,0 +1,17 @@
+[
+  {
+    "type": "file",
+    "name": "compile",
+    "label": "nav.contribute.compile.compile"
+  },
+  {
+    "type": "file",
+    "name": "image",
+    "label": "nav.contribute.compile.image"
+  },
+  {
+    "type": "file",
+    "name": "cicd",
+    "label": "nav.contribute.compile.cicd"
+  }
+]

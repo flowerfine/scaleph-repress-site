@@ -235,6 +235,18 @@
     "zh": "编译",
     "en": "Compile"
   },
+  "nav.contribute.compile.compile": {
+    "zh": "编译",
+    "en": "Compile"
+  },
+  "nav.contribute.compile.image": {
+    "zh": "镜像",
+    "en": "Image"
+  },
+  "nav.contribute.compile.cicd": {
+    "zh": "CI/CD",
+    "en": "CI/CD"
+  },
   "nav.contribute.contribute": {
     "zh": "如何贡献",
     "en": "How To Contribute"
