@@ -17,7 +17,7 @@ Docker 提供了一套轻量、标准化的解决方案，提升开发、部署�
 - redis。
 - minio。minio 作为文件存储中间件，可使用 HDFS、OSS、S3 代替
 - [gravitino](https://github.com/datastrato/gravitino)。元数据，类似的有 [metacat](https://github.com/Netflix/metacat)。
-  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。postgresql 与此同理
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`。postgresql、doris 与此同理
 
 
 ```shell
@@ -33,7 +33,18 @@ docker compose up -d
 
 Docker 一次编译，到处分发运行的特性，同样可以应用在编译场景：编译 `scaleph` 时，创建一个一次性运行的容器，在容器内执行编译过程，编译结束容器销毁，获取编译结果。
 
+许多开源项目同样提供类似方式，避免开发者编译环境不一致：
+
+* doris。[使用 Docker 开发镜像编译（推荐）](https://doris.apache.org/zh-CN/docs/install/source-install/compilation-with-docker)
+* ranger。[build_ranger_using_docker.sh](https://github.com/apache/ranger/blob/master/build_ranger_using_docker.sh)
+
 `scaleph` 同样提供了容器编译方案，提供统一一致的编译环境，详见 [容器内编译](https://flowerfine.github.io/scaleph-website/zh/docs/guide/compile#%E5%AE%B9%E5%99%A8%E5%86%85%E7%BC%96%E8%AF%91)。
+
+:::tip
+
+实际测试在容器内编译，发现能够编译，但是速度很慢。后续会推出如何利用 github actions 环境进行编译的方式
+
+:::
 
 ## 运行环境
 

@@ -26,7 +26,8 @@ scaleph
 ├── scaleph-api                                          # scaleph 服务端入口
 ├── scaleph-application                                  # scaleph 应用管理模块。参考 OAM 模型，管理 Flink 和 Doris 实例
 │   ├── scaleph-application-doris                        # Doris OAM 适配模块
-│   └── scaleph-application-flink                        # Flink OAM 适配模块
+│   ├── scaleph-application-flink                        # Flink OAM 适配模块
+│   └── scaleph-application-oam                          # OAM 模块
 ├── scaleph-common
 ├── scaleph-config
 ├── scaleph-dao
@@ -34,9 +35,9 @@ scaleph
 ├── scaleph-datasource                                   # 数据源管理
 ├── scaleph-dist                                         # scaleph 打包模块
 ├── scaleph-engine
-│   ├── scaleph-engine-flink-client                      # Flink Web UI 接口对接
-│   ├── scaleph-engine-sql-gateway                       # Flink SQL Gateway 集成
-│   └── scaleph-sql-template                             # Flink SQL Template Jar
+│   ├── scaleph-engine-flink-client                      # Flink Web UI 接口对接。待迁移出 scaleph 项目
+│   ├── scaleph-engine-sql-gateway                       # Flink SQL Gateway 集成。待迁移出 scaleph 项目
+│   └── scaleph-sql-template                             # Flink SQL Template Jar。待迁移出 scaleph 项目
 ├── scaleph-file-fetcher                                 # 文件下载 sidecar 实现
 ├── scaleph-kubernetes                                   # Kubernetes 相关功能
 ├── scaleph-meta                                         # 元数据模块。后续对接 gravitino，与 scaleph-datasource 打通
@@ -72,6 +73,6 @@ scaleph
 └── tools
     ├── checkstyle
     ├── docker                                           # Docker 工具
-    ├── kubernetes
+    ├── kubernetes                                       # Kubernetes 工具，内部包含了对 flink-kubernetes-operator、prometheus 或 grafana 等定制
     └── spotbugs
 ```

@@ -4,11 +4,11 @@
 
 ## 环境准备
 
-开发者需安装如下程序：
+开发者需安装如下程序，参考：[准备环境](../quick-start/compile/index.md)
 
 - [JDK](https://adoptium.net/zh-CN/temurin/archive/)。下载并安装 open JDK 17。
 - [Node](https://nodejs.org/en/download/releases/)。下载并安装 Node 16。
-- [Docker](https://docs.docker.com/get-docker/)。下载并安装 Docker，已有 Docker 环境时，使用 `docker version` 和 `docker compose version` 检查对应的版本，更新为最新版本。
+- [Docker](https://docs.docker.com/get-docker/)。下载并安装 Docker。已有 Docker 环境时，使用 `docker version` 和 `docker compose version` 检查对应的版本，避免版本过低造成启动失败。
 
 开发者需准备 IDE，`scaleph` 推荐使用 IntelliJ IDEA 开发，开发时需安装如下插件：
 
@@ -19,6 +19,11 @@
 首先，clone `scaleph` 项目。
 
 ```shell
+## fork 仓库。此步骤只建议对参与贡献 scaleph 有兴趣的开发者操作，否则无需 fork
+## 点击 github 上的 fork 按钮，fork 到自己账号下
+
+## 只下载默认分支代码，避免下载所有分支、tag 和历史提交信息，导致 clone 时间过久
+## 如果是 fork 的仓库，需替换自己仓库链接
 git clone https://github.com/flowerfine/scaleph.git --depth 1
 ```
 
@@ -40,7 +45,7 @@ git clone https://github.com/flowerfine/scaleph.git --depth 1
 - mysql
 - minio
 - [gravitino](https://github.com/datastrato/gravitino)。[小米下一代 Data AI 资产管理实践](https://www.infoq.cn/article/ZSGZr9BUkwMoxWLssDhJ)
-  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。postgresql 与此同理
+  - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，postgresql、doris 与此同理。具体参考 `docker-compose.yml` 同级目录下的 README.md
 
 
 其中 minio 作为文件存储中间件，可以使用 HDFS、OSS 以及 S3 代替。
