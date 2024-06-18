@@ -1,25 +1,36 @@
 # 编译
+当开发者需要手动编译项目时，可以参考此文档。
+
+## 说明
+
 不同的编译方式和环境可能会获得不同的编译结果，甚至会编译失败！`scaleph` 拥有多个编译场景：
 
 - 本地 IDE 开发。
 - 基于 github actions 的 [CI](https://github.com/flowerfine/scaleph/blob/dev/.github/workflows/ci.yml) 流程。
-- 基于 github actions 的 [CD](https://github.com/flowerfine/scaleph/blob/dev/.github/workflows/docker-release.yml) 流程。
+- 基于 github actions 的 [CD](https://github.com/flowerfine/scaleph/actions/workflows/release-master-docker-scaleph.yml) 流程。
 
-`scaleph` 确保 3 个场景的编译环境、命令和结果的一致性，保证了开发者本地开发效果，CI/CD 流程都是可信的。
+为确保 3 个场景的编译环境、命令和结果的一致性，开发者应首先参考 github actions 的 CI 流程，确定编译环境和编译命令：
 
-当开发者需要手动编译项目时，可以参考此文档。
+* [maven](https://github.com/flowerfine/scaleph/actions/workflows/ci-maven.yml)
+* [npm](https://github.com/flowerfine/scaleph/actions/workflows/ci-npm.yml)
+* [docker](https://github.com/flowerfine/scaleph/actions/workflows/ci-docker-build.yml)
 
-## 编译
+## 本地编译
 
-### 机器本地编译
+### 服务端
+
 ```shell
-# 编译服务端。编译完成后，可以在 scaleph-api/target/scaleph-api.jar
-./mvnw -B -U -T 4 clean package -DskipTests -Dfast -am --projects scaleph-api
+# 编译服务端。编译完成后，可以在 scaleph-dist/target/ 获取后缀为 .tar.gz 的安装包
+./mvnw -B -U -T 4C clean package -Pdist -Dfast
 
-# 启动服务端
+# 启动命令
 # 参考 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-api/Dockerfile
+$SCALEPH_HOME/bin/scaleph.sh start-foreground
+```
 
-# 编译前端
+### 前端
+
+```shell
 # 安装依赖。如果网络不好，可以配置国内 npm 包镜像源
 npm install --force
 # 执行编译。编译完成后，可以在 scaleph-ui-react/dist 目录获取编译结果
@@ -29,7 +40,7 @@ npm run build --prod
 # nginx 配置参数 https://github.com/flowerfine/scaleph/blob/dev/tools/docker/build/scaleph-ui-react/nginx.conf.template
 ```
 
-### 容器内编译
+## 容器内编译
 
 通过容器内编译，可以统一编译环境，无需用户准备对应版本的 JDK 和 Node，避免 `scaleph` 在本地开发、CI 环节和二次开发编译打包因为环境问题导致行为不一致。
 
@@ -95,18 +106,3 @@ docker compose -f docker-compose-build-ui.yml build
 # 测试 scaleph-ui-react 镜像编译结果
 docker compose -f docker-compose-build-ui.yml up -d
 ```
-
-### 安装包编译
-
-请先参照前文安装本地编译环境。
-
-```shell
-# clone 源码
-git clone https://github.com/flowerfine/scaleph.git
-cd scaleph
-
-# 开始编译
-mvn -U -B -T 4 clean package -Pdist -DskipTests -Dfast
-```
-
-编译完成后在`scaleph-dist/target`下生成后缀为`.tar.gz`的安装包。
