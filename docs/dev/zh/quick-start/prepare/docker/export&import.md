@@ -25,5 +25,5 @@ docker image -o scaleph-api.tgz ghcr.io/flowerfine/scaleph/scaleph-api:vxx.yy.zz
 docker image load -h
 
 # 导入镜像
-docker docker image load -i scaleph-api.tgz
+docker image load -i scaleph-api.tgz
 ```
