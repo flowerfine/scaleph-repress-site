@@ -45,4 +45,10 @@ docker compose up -d
 docker compose down
 ```
 
+:::warning 注意
+
+使用前需替换 `docker-compose.yaml` 中的 `MINIO_ENDPOINT` 中的 `IP` 变量为真实的 Minio 地址
+
+:::
+
 在所有容器正常启动后，用户即可访问 [http://localhost:8096](http://localhost:8096/)，用户名密码为 `sys_admin/123456`。

@@ -3,7 +3,7 @@
 文档链接
 
 * [快速入门指南](https://docs.k3s.io/zh/quick-start)。k3s 文档
-* [K3s 中文文档](https://docs.rancher.cn/k3s/)。rancher k3s 文档
+* [K3s 中文文档](https://docs.rancher.cn/k3s/)。rancher k3s 文档，参考[链接](https://docs.rancher.cn/docs/k3s/installation/install-options/_index)
 * [腾讯云k3s试用](https://mp.weixin.qq.com/s/d6aoYdrpU2HLnsFwm1Nk_g)。腾讯云轻量服务器提供了 k3s 模版
 
 ## 介绍
@@ -52,25 +52,43 @@ curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
 	K3S_KUBECONFIG_OUTPUT=/root/.kube/config \
 	INSTALL_K3S_EXEC="--node-external-ip=myip" \
 	sh -
+```
 
-# 如果发现拉取 rancher k3s 和 docker 镜像异常，可以修改配置，切换下载地址
+:::tip
+
+如果发现拉取 rancher k3s 和 docker 镜像异常，可以修改配置，切换下载地址。这只是个 demo，https://rancher-mirror.oss-cn-beijing.aliyuncs.com/k3s/k3s-install.sh 实际已经失效
+
+```shell
 curl -sfL https://rancher-mirror.oss-cn-beijing.aliyuncs.com/k3s/k3s-install.sh | \
-	INSTALL_K3S_MIRROR=cn \
-	INSTALL_K3S_MIRROR_URL=rancher-mirror.oss-cn-beijing.aliyuncs.com \
-	INSTALL_K3S_VERSION=v1.26.8+k3s1 \
-	K3S_KUBECONFIG_OUTPUT=/root/.kube/config \
-	INSTALL_K3S_EXEC="--node-external-ip=myip --system-default-registry=registry.cn-hangzhou.aliyuncs.com" \
-	sh -
+  INSTALL_K3S_MIRROR=cn \
+  INSTALL_K3S_MIRROR_URL=rancher-mirror.oss-cn-beijing.aliyuncs.com \
+  INSTALL_K3S_VERSION=v1.26.8+k3s1 \
+  K3S_KUBECONFIG_OUTPUT=/root/.kube/config \
+  INSTALL_K3S_EXEC="--node-external-ip=myip --system-default-registry=registry.cn-hangzhou.aliyuncs.com" \
+  sh -
+```
 
-# 如果发现卡在下载 docker ce，需要更换 linux 的软件源
-# centos 系统
+如果发现卡在下载 docker ce，需要更换 linux 的软件源
+如 centos 系统
+
+```shell
 sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-# ubuntu
-# 安装GPG证书
+```
+
+如 ubuntu
+先安装GPG证书
+
+```shell
 curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
-# 写入软件源信息
+```
+
+在写入软件源信息
+
+```shell
 sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
 ```
+
+:::
 
 ### 新增 agent
 
@@ -102,18 +120,13 @@ curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | \
 	K3S_TOKEN=mynodetoken \
 	INSTALL_K3S_EXEC="--node-external-ip=myip" \
 	sh -
-
-# 如果发现拉取 rancher k3s 和 docker 镜像异常，可以修改配置，切换下载地址
-# 无需添加 --system-default-registry=registry.cn-hangzhou.aliyuncs.com
-curl -sfL https://rancher-mirror.oss-cn-beijing.aliyuncs.com/k3s/k3s-install.sh | \
-	INSTALL_K3S_MIRROR=cn \
-	INSTALL_K3S_MIRROR_URL=rancher-mirror.oss-cn-beijing.aliyuncs.com \
-	INSTALL_K3S_VERSION=v1.26.8+k3s1 \
-	K3S_URL=https://myserver:6443 \
-	K3S_TOKEN=mynodetoken \
-	INSTALL_K3S_EXEC="--node-external-ip=myip" \
-	sh -
 ```
+
+:::tip
+
+如果发现拉取 rancher k3s 和 docker 镜像异常，如上所述，可以修改配置，切换下载地址。
+
+:::
 
 ### 节点管理
 
@@ -163,6 +176,7 @@ k3s 提供的相关文档：[集群访问](https://docs.k3s.io/zh/cluster-access
 
 * `--node-ip`。设置节点 InternalIP
 * `--node-external-ip`。设置节点 ExternalIP
+* `--advertise-address`。设置节点 ip，默认为 `node-external-ip/node-ip`
 
 一些云提供商（例如 Linode）将创建以 “localhost” 作为主机名的主机，而其他云提供商可能根本没有设置主机名。这可能会导致域名解析出现问题。你可以使用 `--node-name` 标志或 `K3S_NODE_NAME` 环境变量运行 K3s，这会通过传递节点名称来解决此问题。
 

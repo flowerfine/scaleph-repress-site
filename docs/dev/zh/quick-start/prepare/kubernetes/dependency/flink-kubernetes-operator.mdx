@@ -67,7 +67,13 @@
 
 :::tip
 
-`tools/kubernetes/flink/values.yaml` 是未启用 Flink [FileSystem](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/filesystems/overview/) 插件的，不支持 `FlinkSessionJob` 任务。欲支持 `FlinkSessionJob` 任务，请使用 `tools/kubernetes/flink/values-session.yaml`。使用前需替换 `tools/kubernetes/flink/values-session.yaml` 中的 `s3.endpoint: http://${IP}:9000` 中的 `IP` 变量为真实的 Minio 地址
+`tools/kubernetes/flink/values.yaml` 是未启用 Flink [FileSystem](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/deployment/filesystems/overview/) 插件的，不支持 `FlinkSessionJob` 任务。欲支持 `FlinkSessionJob` 任务，请使用 `tools/kubernetes/flink/values-session.yaml`。
+
+:::
+
+:::warning 注意
+
+使用前需替换 `tools/kubernetes/flink/values-session.yaml` 中的 `s3.endpoint: http://${IP}:9000` 中的 `IP` 变量为真实的 Minio 地址
 
 :::
 
