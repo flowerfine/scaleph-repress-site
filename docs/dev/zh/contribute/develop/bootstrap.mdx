@@ -62,6 +62,7 @@ docker compose up -d
   - host: http://127.0.0.1:9001
   - username: admin
   - password: password
+  - `scaleph` 在提供的 minio 容器中创建了 `scaleph` 和 `scaleph-public` 2 个 bucket，其中 `scaleph-public` 可通过 http 匿名访问。访问方式为：`http://$MINIO_IP:$MINIO_PORT/scaleph-public/$FILE_NAME`，如 `http://localhost:9000/scaleph-public/scaleph.svg`。
 - gravitino。
   - host: http://localhost:8090
   

@@ -47,7 +47,7 @@ docker compose down
 
 :::warning 注意
 
-使用前需替换 `docker-compose.yaml` 中的 `MINIO_ENDPOINT` 中的 `IP` 变量为真实的 Minio 地址
+使用前需替换 `docker-compose.yaml` 中的 `MINIO_ENDPOINT` 中的 `MINIO_IP` 变量为真实的 Minio 地址，不要使用 `localhost` 或 `127.0.0.1`
 
 :::
 

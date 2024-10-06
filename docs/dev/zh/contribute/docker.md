@@ -16,6 +16,7 @@ Docker 提供了一套轻量、标准化的解决方案，提升开发、部署�
 - mysql。`tools/docker/mysql/init.d` 存储 `scaleph` 所有的 sql 文件。
 - redis。
 - minio。minio 作为文件存储中间件，可使用 HDFS、OSS、S3 代替
+  - `scaleph` 在提供的 minio 默认容器中创建了 `scaleph` 和 `scaleph-public` 2 个 bucket，其中 `scaleph-public` 可通过 http 匿名访问。访问方式为：`http://$MINIO_IP:$MINIO_PORT/scaleph-public/$FILE_NAME`，如 `http://localhost:9000/scaleph-public/scaleph.svg`。
 - [gravitino](https://github.com/datastrato/gravitino)。元数据，类似的有 [metacat](https://github.com/Netflix/metacat)。
   - mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`。postgresql、doris 与此同理
 

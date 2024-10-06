@@ -7,6 +7,8 @@
   * sakura。`scaleph` 实现的 Flink catalog 使用的数据库。
 * redis。用户权限模块使用。
 * minio。`scaleph` 文件上传，Flink 任务运行期间产生的 checkpoints、savepoints 和 ha 数据。`scaleph` 未于 minio 深度绑定，用户可以按需切换 HDFS、OSS 等。
+  * `scaleph` 在提供的 minio 默认容器中创建了 `scaleph` 和 `scaleph-public` 2 个 bucket，其中 `scaleph-public` 可通过 http 匿名访问。访问方式为：`http://$MINIO_IP:$MINIO_PORT/scaleph-public/$FILE_NAME`，如 `http://localhost:9000/scaleph-public/scaleph.svg`。
+
 * [gravitino](https://github.com/datastrato/gravitino)。元数据。
   * mysql catalog 需要添加 jdbc 驱动，通过 volume 挂载到 `${gravitino_home}/catalogs/jdbc-mysql/libs`，gravitino 0.5.0 版本 mysql 8.x 驱动需选择较高版本，低版本有兼容性问题。其他类型数据源 如postgresql 与此同理
 
